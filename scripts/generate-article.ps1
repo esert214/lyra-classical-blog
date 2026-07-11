@@ -114,7 +114,7 @@ tags: ["標籤1", "標籤2"]
 
 # Main
 if (-not $Slug) {
-  $Slug = Read-Host "Enter article slug (e.g., 'beethoven-sym5')"
+  $Slug = Read-Host "Enter article slug (e.g., 'dg-471489')"
 }
 
 if (-not $Type) {
