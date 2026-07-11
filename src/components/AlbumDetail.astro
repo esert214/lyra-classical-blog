@@ -1,0 +1,163 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+import { t, type Locale } from '../i18n/utils';
+
+export interface Props { locale: Locale; slug: string }
+
+const { locale, slug } = Astro.props;
+
+const entries = await getCollection('album', (e) => e.data.locale === locale && e.data.slug === slug);
+if (entries.length === 0) return Astro.redirect('/404');
+const entry = entries[0];
+const { data } = entry;
+const { Content } = await render(entry);
+const prefix = locale === 'zh' ? '' : '/en';
+const fmt = (d: Date) => locale === 'zh' ? `${d.getFullYear()} 年 ${d.getMonth() + 1} 月 ${d.getDate()} 日` : d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<Layout locale={locale} title={`${data.album} — ${t('siteTitle', locale)}`}>
+  <a href={`${prefix}/album`} class="back">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+    {t('backToList', locale)}
+  </a>
+
+  <article>
+    <header class="article-header">
+      {data.coverImage && <img class="cover" src={data.coverImage} alt={data.album} />}
+      <div class="header-text">
+        <h1>{data.album}</h1>
+        <p class="subtitle">{data.artist} · {data.releaseDate} · {data.genre}</p>
+        <time class="pub-date">{t('published', locale)} {fmt(data.date)}</time>
+      </div>
+    </header>
+
+    <div class="content"><Content /></div>
+
+    <section class="people-section">
+      <h2>{t('performerInfo', locale)}</h2>
+      <div class="people-grid">
+        {data.performers.map((p) => (
+          <div class="person-card">
+            <div class="person-avatar">{p.name.charAt(0)}</div>
+            <div class="person-body">
+              <strong>{p.name}</strong>
+              {p.role && <span class="person-role">{p.role}</span>}
+              {p.bio && <p class="person-bio">{p.bio}</p>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="people-section">
+      <h2>{t('composerInfo', locale)}</h2>
+      <div class="people-grid">
+        {data.composers.map((c) => (
+          <div class="person-card">
+            <div class="person-avatar">{c.name.charAt(0)}</div>
+            <div class="person-body">
+              <strong>{c.name}</strong>
+              {c.bio && <p class="person-bio">{c.bio}</p>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {data.taiwanVisitDetail && (
+      <section class="section-block">
+        <h3>{t('taiwanVisit', locale)}</h3>
+        <p>{data.taiwanVisitDetail}</p>
+        {data.taiwanVisitImages && data.taiwanVisitImages.length > 0 && (
+          <div class="taiwan-images">
+            {data.taiwanVisitImages.map((img) => <img src={img} alt="" loading="lazy" />)}
+          </div>
+        )}
+      </section>
+    )}
+
+    {data.upcomingConcerts && data.upcomingConcerts.length > 0 && (
+      <section class="section-block">
+        <h3>{t('upcomingConcert', locale)}</h3>
+        {data.upcomingConcerts.map((c) => (
+          <div class="concert-item">
+            <strong>{c.date}</strong>
+            <span>{c.location}</span>
+            {c.event && <span class="concert-event">{c.event}</span>}
+            {c.url && <a href={c.url} target="_blank">{t('moreInfo', locale)}</a>}
+          </div>
+        ))}
+      </section>
+    )}
+
+    {data.relatedAlbums && data.relatedAlbums.length > 0 && (
+      <section class="section-block">
+        <h3>{t('relatedAlbum', locale)}</h3>
+        <div class="related-grid">
+          {data.relatedAlbums.map((r) => {
+            const href = r.slug ? `${prefix}/album/${r.slug}` : r.url || null;
+            const isExternal = !r.slug && !!r.url;
+            const Tag = href ? 'a' : 'div';
+            const attrs = href ? (isExternal ? { href, target: '_blank', rel: 'noopener' } : { href }) : {};
+            return (
+              <Tag class="related-card" {...attrs}>
+                {r.coverImage && <div class="related-cover-wrap"><img class="related-cover" src={r.coverImage} alt={r.title} loading="lazy" /></div>}
+                <div class="related-body">
+                  <strong>{r.title}{isExternal ? <span class="external-icon"> ↗</span> : ''}</strong>
+                  <span class="related-artist">{r.artist}</span>
+                </div>
+              </Tag>
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+    <div class="tags">
+      {data.tags.map((tag) => <span class="tag">{tag}</span>)}
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .back { display: inline-flex; align-items: center; gap: 0.35rem; margin-bottom: 1.5rem; font-size: 0.88rem; color: var(--color-muted); text-decoration: none; }
+  .back:hover { color: var(--color-accent); }
+  .article-header { margin-bottom: 2rem; }
+  .cover { width: 100%; max-height: 400px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1.5rem; box-shadow: var(--shadow-md); }
+  .header-text h1 { font-size: 1.85rem; margin: 0; }
+  .subtitle { color: var(--color-muted); margin: 0.3rem 0 0; font-size: 0.92rem; }
+  .pub-date { display: block; margin-top: 0.4rem; font-size: 0.82rem; color: var(--color-muted); }
+  .content { line-height: 1.85; font-size: 1rem; color: var(--color-text); }
+  .content :global(p) { margin: 1.2em 0; }
+
+  .people-section { margin: 2.5rem 0; }
+  .people-section h2 { font-family: var(--font-sans); font-size: 1rem; color: var(--color-primary); margin-bottom: 1rem; }
+  .people-grid { display: grid; gap: 0.85rem; }
+  .person-card { display: flex; gap: 1rem; align-items: flex-start; padding: 1.125rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+  .person-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--color-accent-light); color: var(--color-tag-text); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.95rem; flex-shrink: 0; }
+  .person-body strong { font-size: 0.95rem; display: block; }
+  .person-role { font-size: 0.78rem; color: var(--color-accent); font-weight: 500; margin-top: 0.1rem; display: inline-block; }
+  .person-bio { font-size: 0.85rem; color: var(--color-muted); margin: 0.35rem 0 0; line-height: 1.6; }
+
+  .section-block { margin: 2rem 0; padding: 1.25rem; background: var(--color-surface); border: 1px solid var(--color-border); border-left: 3px solid var(--color-accent); border-radius: var(--radius-md); }
+  .section-block h3 { font-family: var(--font-sans); font-size: 0.95rem; margin: 0 0 0.65rem; color: var(--color-primary); }
+  .section-block p { margin: 0; line-height: 1.7; font-size: 0.9rem; }
+  .taiwan-images { display: flex; gap: 0.75rem; margin-top: 0.85rem; flex-wrap: wrap; }
+  .taiwan-images img { width: 100%; max-height: 260px; object-fit: cover; border-radius: var(--radius-sm); }
+  .concert-item { display: flex; flex-wrap: wrap; gap: 0.35rem 0.6rem; padding: 0.4rem 0; font-size: 0.9rem; }
+  .concert-item + .concert-item { border-top: 1px solid var(--color-border); }
+  .concert-event { color: var(--color-muted); font-size: 0.85rem; }
+  .concert-item a { font-size: 0.85rem; font-weight: 500; }
+  .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.75rem; }
+  .related-card { display: flex; gap: 0.75rem; align-items: center; padding: 0.65rem; background: var(--color-accent-light); border-radius: var(--radius-sm); text-decoration: none; color: inherit; transition: box-shadow 0.15s; }
+  .related-card:hover { box-shadow: var(--shadow-md); }
+  .related-cover-wrap { flex-shrink: 0; border-radius: 4px; overflow: hidden; }
+  .related-cover { display: block; width: 48px; height: 48px; object-fit: cover; transition: transform 0.2s ease; }
+  .related-card:hover .related-cover { transform: scale(2.5); }
+  .related-body strong { display: block; font-size: 0.82rem; color: var(--color-primary); }
+  .related-artist { font-size: 0.75rem; color: var(--color-muted); }
+  .external-icon { font-size: 0.7rem; color: var(--color-accent); }
+  .tags { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tag { padding: 2px 12px; background: var(--color-tag-bg); color: var(--color-tag-text); border-radius: 12px; font-size: 0.78rem; font-weight: 500; }
+</style>

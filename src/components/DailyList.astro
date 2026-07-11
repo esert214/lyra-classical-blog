@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { t, type Locale } from '../i18n/utils';
+
+export interface Props { locale: Locale }
+
+const { locale } = Astro.props;
+const entries = await getCollection('daily-classical', (e) => e.data.locale === locale);
+const sorted = entries.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const prefix = locale === 'zh' ? '' : '/en';
+---
+
+<Layout locale={locale} title={`${t('dailySection', locale)} — ${t('siteTitle', locale)}`}>
+  <div class="page-header">
+    <h1>{t('dailySection', locale)}</h1>
+    <p class="page-count">{t('dailyCount', locale, { count: sorted.length })}</p>
+  </div>
+  <div class="grid">
+    {sorted.map((entry) => (
+      <a class="card" href={`${prefix}/daily-classical/${entry.data.slug}`}>
+        <div class="card-icon">♪</div>
+        <div class="card-body">
+          <h2>{entry.data.title}</h2>
+          <p class="meta">{entry.data.composer.name} · {entry.data.period}</p>
+          <p class="meta-rec">{entry.data.notableRecordings.length} {t('alternativeRecording', locale).toLowerCase()}</p>
+        </div>
+      </a>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .page-header { margin-bottom: 2rem; }
+  .page-header h1 { font-size: 1.75rem; margin: 0; }
+  .page-count { color: var(--color-muted); font-size: 0.82rem; margin: 0.2rem 0 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; }
+  .card {
+    display: flex; align-items: flex-start; gap: 1rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none; color: inherit;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s, transform 0.2s;
+    padding: 1.125rem;
+  }
+  .card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+  .card-icon {
+    font-size: 1.6rem; color: var(--color-accent);
+    flex-shrink: 0; line-height: 1.2;
+  }
+  .card-body h2 { margin: 0 0 0.25rem; font-size: 1rem; }
+  .meta { color: var(--color-muted); font-size: 0.82rem; margin: 0.15rem 0; }
+  .meta-rec { color: var(--color-accent); font-size: 0.78rem; margin: 0.35rem 0 0; }
+</style>

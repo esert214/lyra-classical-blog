@@ -1,0 +1,12 @@
+---
+import { getCollection } from 'astro:content';
+import AlbumDetail from '../../components/AlbumDetail.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('album', (e) => e.data.locale === 'zh');
+  return entries.map((e) => ({ params: { slug: e.data.slug }, props: { slug: e.data.slug } }));
+}
+
+const { slug } = Astro.props;
+---
+<AlbumDetail locale="zh" slug={slug} />

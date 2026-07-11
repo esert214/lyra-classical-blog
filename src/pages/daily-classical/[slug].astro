@@ -1,0 +1,12 @@
+---
+import { getCollection } from 'astro:content';
+import DailyDetail from '../../components/DailyDetail.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('daily-classical', (e) => e.data.locale === 'zh');
+  return entries.map((e) => ({ params: { slug: e.data.slug }, props: { slug: e.data.slug } }));
+}
+
+const { slug } = Astro.props;
+---
+<DailyDetail locale="zh" slug={slug} />
