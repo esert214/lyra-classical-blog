@@ -41,6 +41,21 @@
 - 部署至 Vercel（https://lyra-classical-blog.vercel.app）
 - 自動 CI/CD（push → auto-deploy）
 
+## [0.3.0] — 2026-07-11
+
+### 工作流程確立
+
+- 使用者只需提供商品網址（博客來 / Presto Music / DG 官網）→ AI 自動查資料、寫中英文文章、git push 上線
+- Slug 由 AI 從目錄編號自動決定（如 `dg-471489`），使用者無需知道 slug
+- 建立 `new-album.bat` / `new-daily.bat` — 雙擊即產模板 + git push
+- 未來多站策略：科技 / 閱讀等新站另開獨立 repo，從此專案拷貝改造，不混在同一站
+
+### 錯誤修正
+
+- 移除 relatedAlbums 中不存在的 `slug`（`dg-471490`、`dg-471491`），改為純外部連結（Deutsche Grammophon）
+- 修正 scripts/generate-article.ps1 中 slug 提示範例（`beethoven-sym5` → `dg-471489`）
+- `.gitignore` 補充 `.playwright-mcp/`、`.vscode/`、`homepage-zh.yml`
+
 ## [0.1.0] — 2026-07-10
 
 ### 專案初始化
