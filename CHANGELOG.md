@@ -1,5 +1,46 @@
 # Lyra賞樂誌 — 開發紀錄
 
+## [0.2.0] — 2026-07-11
+
+### 視覺大改版
+
+- 色系全面更換：深靛藍 `#1e1b4b`／金 `#c9952e`／暖白 `#fcfbf9`
+- 字體導入：Playfair Display（標題）、Inter（內文）、Noto Sans TC（中文）
+- Hero 區使用 Elbphilharmonie 音樂廳照片 + 深色漸層 overlay
+- 頁面背景加入紙紋 SVG 材質（subtle paper noise）
+- 卡片 hover 陰影 lift 效果
+- SVG 箭頭取代文字 ← 返回按鈕
+
+### Schema 強化
+
+- `performers` 從字串陣列改為物件 `{ name, role, bio }` — 支援角色與人物簡介
+- `composers` 從字串陣列改為物件 `{ name, bio }` — 支援作曲家簡介
+- `relatedAlbums` 新增 `slug`（內部連結）與 `url`（外部連結）雙欄位
+- 新增 `catalogNumber` 欄位儲存唱片編號
+- 中文內容名稱使用 `English（中文）` 格式
+
+### Slug 命名規範
+
+- 改採唱片編號作為 slug：`dg-471489`（原 `beethoven-sym5`）、`sony-smk63088`（原 `barber-adagio`）
+- 避免不同錄音版本撞 slug
+
+### 內容頁面元件
+
+- AlbumDetail：演出者卡片（大頭貼 + 角色 + bio）、來台紀實圖片區、未來音樂會清單、相關推薦專輯（區分內外部連結 + ↗ 圖示）、hover 縮圖放大 2.5 倍
+- DailyDetail：作曲家卡片 + bio、知名錄音版本列表
+
+### 樣本內容更新
+
+- 貝多芬第五號（dg-471489）— 使用 DG Universal Music CDN 真實封面圖、各樂章賞析、聆聽建議
+- 巴伯弦樂慢板（sony-smk63088）
+- 中英文格式統一：`English（中文）`
+
+### 部署
+
+- Git 初始化 + 推送至 GitHub（esert214/lyra-classical-blog）
+- 部署至 Vercel（https://lyra-classical-blog.vercel.app）
+- 自動 CI/CD（push → auto-deploy）
+
 ## [0.1.0] — 2026-07-10
 
 ### 專案初始化
