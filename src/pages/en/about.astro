@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { t } from '../../i18n/utils';
+const locale = 'en';
+---
+
+<Layout locale={locale} title={`${t('navAbout', locale)} — ${t('siteTitle', locale)}`}>
+  <article class="about-page">
+    <h1>About Lyra Classical</h1>
+
+    <section>
+      <h2>About This Site</h2>
+      <p>Lyra賞樂誌 (Lyra Classical) is a classical music appreciation blog founded in 2026. No jargon, no pretension — just honest feelings and genuine sharing about music.</p>
+      <p>The name comes from the lyre of Greek mythology — Apollo's instrument, symbolizing the power of music and poetry. Our hope is that every article resonates like a quiet melody.</p>
+    </section>
+
+    <section>
+      <h2>What You'll Find Here</h2>
+      <ul>
+        <li><strong>Album Reviews</strong> — Deep dives into recordings worth owning, from track structure to recording history</li>
+        <li><strong>Daily Classical</strong> — Bite-sized introductions to great pieces, one at a time</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Feel free to reach out via GitHub Issues for any questions or suggestions.</p>
+    </section>
+  </article>
+</Layout>
+
+<style>
+  .about-page { max-width: 680px; margin: 0 auto; line-height: 1.85; }
+  .about-page h1 { font-size: 1.6rem; margin-bottom: 1.5rem; }
+  .about-page h2 { font-size: 1.15rem; margin: 2rem 0 0.75rem; font-family: var(--font-sans); color: var(--color-accent); }
+  .about-page p { margin: 0.75rem 0; font-size: 0.95rem; }
+  .about-page ul { padding-left: 1.2rem; }
+  .about-page li { margin: 0.4rem 0; font-size: 0.95rem; }
+</style>

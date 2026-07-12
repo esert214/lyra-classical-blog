@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { t } from '../i18n/utils';
+const locale = 'zh';
+---
+
+<Layout locale={locale} title={`${t('navAbout', locale)} — ${t('siteTitle', locale)}`}>
+  <article class="about-page">
+    <h1>{t('navAbout', locale)} Lyra賞樂誌</h1>
+
+    <section>
+      <h2>關於這個網站</h2>
+      <p>Lyra賞樂誌是一個古典音樂賞析部落格，成立於 2026 年。這裡沒有艱澀的術語轟炸，只有對音樂最真誠的感受與分享。</p>
+      <p>名稱取自希臘神話中的里拉琴（Lyra）—— 阿波羅的樂器，象徵音樂與詩歌的力量。希望每一篇文章都能像琴聲一樣，陪你度過一段安靜的時光。</p>
+    </section>
+
+    <section>
+      <h2>在這裡你會看到</h2>
+      <ul>
+        <li><strong>專輯介紹</strong> — 從曲目結構到錄音背景，深度解析值得收藏的唱片</li>
+        <li><strong>每日一曲</strong> — 輕量短文，每天認識一首好作品</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>聯絡方式</h2>
+      <p>有任何想法或建議，歡迎透過 GitHub Issues 與我交流。</p>
+    </section>
+  </article>
+</Layout>
+
+<style>
+  .about-page { max-width: 680px; margin: 0 auto; line-height: 1.85; }
+  .about-page h1 { font-size: 1.6rem; margin-bottom: 1.5rem; }
+  .about-page h2 { font-size: 1.15rem; margin: 2rem 0 0.75rem; font-family: var(--font-sans); color: var(--color-accent); }
+  .about-page p { margin: 0.75rem 0; font-size: 0.95rem; }
+  .about-page ul { padding-left: 1.2rem; }
+  .about-page li { margin: 0.4rem 0; font-size: 0.95rem; }
+</style>

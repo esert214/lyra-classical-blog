@@ -1,0 +1,63 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { t } from '../../../i18n/utils';
+
+const locale = 'en';
+export async function getStaticPaths() {
+  const albums = await getCollection('album', (e) => e.data.locale === 'en');
+  const dailies = await getCollection('daily-classical', (e) => e.data.locale === 'en');
+  const tags = new Set();
+  for (const e of [...albums, ...dailies]) {
+    for (const tag of e.data.tags) tags.add(tag);
+  }
+  return [...tags].map((tag) => ({ params: { tag } }));
+}
+
+const { tag } = Astro.params;
+const allAlbums = await getCollection('album', (e) => e.data.locale === locale && e.data.tags.includes(tag));
+const allDailies = await getCollection('daily-classical', (e) => e.data.locale === locale && e.data.tags.includes(tag));
+const entries = [...allAlbums, ...allDailies].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Layout locale={locale} title={`${tag} — ${t('siteTitle', locale)}`}>
+  <nav class="breadcrumb">
+    <a href="/en">{t('navHome', locale)}</a>
+    <span class="sep">›</span>
+    <a href="/en/tags">{t('navTags', locale)}</a>
+    <span class="sep">›</span>
+    <span>{tag}</span>
+  </nav>
+
+  <h1 class="page-title">{tag}</h1>
+  <p class="result-count">{entries.length} {entries.length === 1 ? 'article' : 'articles'}</p>
+
+  <div class="entry-list">
+    {entries.map((e) => (
+      <a href={`/en/${e.collection === 'album' ? 'album' : 'daily-classical'}/${e.data.slug}`} class="entry-card">
+        {e.data.coverImage && <img class="entry-cover" src={e.data.coverImage} alt={e.data.title || e.data.album} loading="lazy" />}
+        <div class="entry-body">
+          <span class="entry-type">{e.collection === 'album' ? 'Album Review' : 'Daily Classical'}</span>
+          <strong>{e.data.album || e.data.title}</strong>
+          <span class="entry-meta">{e.data.artist ? e.data.artist : e.data.composer?.name}</span>
+        </div>
+      </a>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .breadcrumb { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 1.5rem; font-size: 0.82rem; color: var(--color-muted); }
+  .breadcrumb a { color: var(--color-muted); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--color-accent); }
+  .breadcrumb .sep { color: var(--color-border); }
+  .page-title { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .result-count { color: var(--color-muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .entry-list { display: grid; gap: 0.75rem; }
+  .entry-card { display: flex; gap: 0.75rem; align-items: center; padding: 0.65rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); text-decoration: none; color: inherit; transition: box-shadow 0.15s; }
+  .entry-card:hover { box-shadow: var(--shadow-md); }
+  .entry-cover { width: 48px; height: 48px; object-fit: cover; border-radius: 4px; flex-shrink: 0; }
+  .entry-body strong { display: block; font-size: 0.9rem; color: var(--color-primary); }
+  .entry-type { font-size: 0.72rem; color: var(--color-accent); font-weight: 600; }
+  .entry-meta { font-size: 0.78rem; color: var(--color-muted); }
+</style>

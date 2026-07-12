@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { t } from '../../i18n/utils';
+
+const locale = 'zh';
+const albums = await getCollection('album', (e) => e.data.locale === locale);
+const dailies = await getCollection('daily-classical', (e) => e.data.locale === locale);
+const tagMap = new Map();
+for (const e of [...albums, ...dailies]) {
+  for (const tag of e.data.tags) {
+    tagMap.set(tag, (tagMap.get(tag) || 0) + 1);
+  }
+}
+const tags = [...tagMap.entries()].sort((a, b) => b[1] - a[1]);
+---
+
+<Layout locale={locale} title={`標籤 — ${t('siteTitle', locale)}`}>
+  <h1 class="page-title">標籤</h1>
+  <div class="tag-list">
+    {tags.map(([tag, count]) => (
+      <a href={`/tags/${encodeURIComponent(tag)}`} class="tag-card">
+        <span class="tag-name">{tag}</span>
+        <span class="tag-count">{count}</span>
+      </a>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .page-title { font-size: 1.5rem; margin-bottom: 1.5rem; }
+  .tag-list { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+  .tag-card { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.4rem 1rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 999px; text-decoration: none; color: inherit; font-size: 0.88rem; transition: box-shadow 0.15s; }
+  .tag-card:hover { box-shadow: var(--shadow-md); border-color: var(--color-accent); }
+  .tag-count { font-size: 0.75rem; color: var(--color-muted); background: var(--color-accent-light); padding: 0.1rem 0.45rem; border-radius: 999px; }
+</style>

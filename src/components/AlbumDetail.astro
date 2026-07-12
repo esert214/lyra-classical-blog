@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
 import { t, type Locale } from '../i18n/utils';
+import AuthorBio from './AuthorBio.astro';
 
 export interface Props { locale: Locale; slug: string }
 
@@ -132,8 +133,10 @@ const fmt = (d: Date) => locale === 'zh' ? `${d.getFullYear()} 年 ${d.getMonth(
       </section>
     )}
 
+    <AuthorBio locale={locale} />
+
     <div class="tags">
-      {data.tags.map((tag) => <span class="tag">{tag}</span>)}
+      {data.tags.map((tag) => <a href={`${prefix}/tags/${encodeURIComponent(tag)}`} class="tag">{tag}</a>)}
     </div>
   </article>
 </Layout>

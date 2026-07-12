@@ -1,0 +1,29 @@
+---
+import { t, type Locale } from '../i18n/utils';
+
+export interface Props { locale: Locale }
+
+const { locale } = Astro.props;
+const authorName = locale === 'zh' ? 'Esert（艾瑟特）' : 'Esert';
+const authorBio = locale === 'zh'
+  ? '古典音樂愛好者，Lyra賞樂誌 創辦人。相信好的音樂值得被好好記錄。'
+  : 'Classical music enthusiast and founder of Lyra賞樂誌. Believes great music deserves to be remembered.';
+---
+
+<div class="author-card">
+  <div class="author-avatar">{authorName.charAt(0)}</div>
+  <div class="author-body">
+    <strong class="author-name">{authorName}</strong>
+    <p class="author-bio">{authorBio}</p>
+    <a href={locale === 'zh' ? '/about' : '/en/about'} class="author-link">{t('navAbout', locale)} →</a>
+  </div>
+</div>
+
+<style>
+  .author-card { display: flex; gap: 1rem; align-items: flex-start; padding: 1.25rem; margin: 2.5rem 0; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
+  .author-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--color-accent-light); color: var(--color-accent); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1rem; flex-shrink: 0; }
+  .author-name { font-size: 0.95rem; color: var(--color-primary); }
+  .author-bio { margin: 0.25rem 0 0.35rem; font-size: 0.85rem; color: var(--color-muted); line-height: 1.6; }
+  .author-link { font-size: 0.82rem; color: var(--color-accent); text-decoration: none; font-weight: 500; }
+  .author-link:hover { text-decoration: underline; }
+</style>
