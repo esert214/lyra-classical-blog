@@ -30,7 +30,12 @@ const fmt = (d: Date) => locale === 'zh' ? `${d.getFullYear()} 年 ${d.getMonth(
       {data.coverImage && <img class="cover" src={data.coverImage} alt={data.album} />}
       <div class="header-text">
         <h1>{data.album}</h1>
-        <p class="subtitle">{data.artist} · {data.releaseDate} · {data.genre}</p>
+        <div class="meta-grid">
+          {data.catalogNumber && <div class="meta-item"><span class="meta-label">{t('catalogLabel', locale)}</span><span class="meta-value">{data.catalogNumber}</span></div>}
+          <div class="meta-item"><span class="meta-label">{t('artistLabel', locale)}</span><span class="meta-value">{data.artist}</span></div>
+          <div class="meta-item"><span class="meta-label">{t('releaseLabel', locale)}</span><span class="meta-value">{data.releaseDate}</span></div>
+          <div class="meta-item"><span class="meta-label">{t('genreLabel', locale)}</span><span class="meta-value">{data.genre}</span></div>
+        </div>
         <time class="pub-date">{t('published', locale)} {fmt(data.date)}</time>
         <button
           class="bookmark-btn"
@@ -142,7 +147,10 @@ const fmt = (d: Date) => locale === 'zh' ? `${d.getFullYear()} 年 ${d.getMonth(
   .article-header { margin-bottom: 2rem; }
   .cover { width: 100%; max-height: 400px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1.5rem; box-shadow: var(--shadow-md); }
   .header-text h1 { font-size: 1.85rem; margin: 0; }
-  .subtitle { color: var(--color-muted); margin: 0.3rem 0 0; font-size: 0.92rem; }
+  .meta-grid { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin-top: 0.5rem; }
+  .meta-item { display: flex; flex-direction: column; gap: 0.1rem; }
+  .meta-label { font-size: 0.7rem; color: var(--color-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .meta-value { font-size: 0.9rem; color: var(--color-text); font-weight: 500; }
   .pub-date { display: block; margin-top: 0.4rem; font-size: 0.82rem; color: var(--color-muted); }
   .bookmark-btn { display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 0.6rem; padding: 0.35rem 0.75rem; font-size: 0.8rem; font-family: var(--font-sans); border: 1px solid var(--color-border); border-radius: 999px; background: var(--color-surface); color: var(--color-muted); cursor: pointer; transition: all 0.15s; }
   .bookmark-btn:hover { border-color: var(--color-accent); color: var(--color-accent); }

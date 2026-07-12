@@ -43,6 +43,10 @@ const translations: TranslationMap = {
   savedArticle: { zh: '已收藏', en: 'Saved' },
   bookmarks: { zh: '我的收藏', en: 'Bookmarks' },
   noBookmarks: { zh: '還沒有收藏任何文章', en: 'No saved articles yet' },
+  catalogLabel: { zh: '唱片編號', en: 'Catalog' },
+  artistLabel: { zh: '演出者', en: 'Artist' },
+  releaseLabel: { zh: '發行年份', en: 'Released' },
+  genreLabel: { zh: '類型', en: 'Genre' },
 };
 
 export function t(key: string, locale: Locale, vars?: Record<string, string | number>): string {
