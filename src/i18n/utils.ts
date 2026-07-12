@@ -39,6 +39,10 @@ const translations: TranslationMap = {
   goHome: { zh: '回到首頁', en: 'Go Home' },
   moreInfo: { zh: '更多資訊 →', en: 'More Info →' },
   published: { zh: '刊登日期：', en: 'Published ' },
+  saveArticle: { zh: '收藏文章', en: 'Save Story' },
+  savedArticle: { zh: '已收藏', en: 'Saved' },
+  bookmarks: { zh: '我的收藏', en: 'Bookmarks' },
+  noBookmarks: { zh: '還沒有收藏任何文章', en: 'No saved articles yet' },
 };
 
 export function t(key: string, locale: Locale, vars?: Record<string, string | number>): string {

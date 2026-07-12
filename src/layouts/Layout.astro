@@ -28,6 +28,42 @@ const path = Astro.url.pathname;
     <Header locale={locale} currentPath={path} />
     <main class="main-content"><slot /></main>
     <Footer locale={locale} />
+    <script>
+      const key = 'lyra-bookmarks';
+      function getBookmarks() { return JSON.parse(localStorage.getItem(key) || '[]'); }
+      function saveBookmarks(list) { localStorage.setItem(key, JSON.stringify(list)); }
+
+      document.addEventListener('click', (e) => {
+        const btn = e.target.closest('[data-bookmark]');
+        if (!btn) return;
+        const raw = btn.getAttribute('data-bookmark');
+        if (!raw) return;
+        const data = JSON.parse(raw);
+        let bookmarks = getBookmarks();
+        const idx = bookmarks.findIndex((b) => b.url === data.url);
+        if (idx > -1) {
+          bookmarks.splice(idx, 1);
+          btn.classList.remove('saved');
+          btn.querySelector('.bookmark-label').textContent = btn.getAttribute('data-save-label');
+        } else {
+          bookmarks.push(data);
+          saveBookmarks(bookmarks);
+          btn.classList.add('saved');
+          btn.querySelector('.bookmark-label').textContent = btn.getAttribute('data-saved-label');
+        }
+      });
+
+      document.querySelectorAll('[data-bookmark]').forEach((btn) => {
+        const raw = btn.getAttribute('data-bookmark');
+        if (!raw) return;
+        const data = JSON.parse(raw);
+        const bookmarks = getBookmarks();
+        if (bookmarks.some((b) => b.url === data.url)) {
+          btn.classList.add('saved');
+          btn.querySelector('.bookmark-label').textContent = btn.getAttribute('data-saved-label');
+        }
+      });
+    </script>
   </body>
 </html>
 

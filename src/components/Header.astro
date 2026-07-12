@@ -43,6 +43,9 @@ function langSwitchHref(path: string, from: Locale): string {
         </a>
       ))}
     </nav>
+    <a href={locale === 'zh' ? '/bookmarks' : '/en/bookmarks'} class="nav-icon-link" title={t('bookmarks', locale)}>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+    </a>
     <a href={langSwitchHref(currentPath, locale)} class="lang-switch">{t('switchLang', locale)}</a>
   </div>
 </header>
@@ -99,6 +102,8 @@ function langSwitchHref(path: string, from: Locale): string {
   }
   .main-nav a:hover { color: var(--color-primary); background: #f3f4f6; }
   .main-nav a.active { color: var(--color-primary); background: var(--color-accent-light); }
+  .nav-icon-link { display: flex; align-items: center; padding: 0.35rem; color: var(--color-muted); text-decoration: none; transition: color 0.15s; }
+  .nav-icon-link:hover { color: var(--color-accent); }
   .lang-switch {
     font-size: 0.8rem;
     font-weight: 500;

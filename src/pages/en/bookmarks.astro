@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { t } from '../../i18n/utils';
+const locale = 'en';
+const prefix = '/en';
+const title = `${t('bookmarks', locale)} — ${t('siteTitle', locale)}`;
+---
+
+<Layout locale={locale} title={title}>
+  <h1 class="page-title">{t('bookmarks', locale)}</h1>
+  <div id="bookmarks-list" class="bookmarks-grid">
+    <p class="empty">{t('noBookmarks', locale)}</p>
+  </div>
+</Layout>
+
+<script>
+  const key = 'lyra-bookmarks';
+  const list = document.getElementById('bookmarks-list');
+  const items = JSON.parse(localStorage.getItem(key) || '[]');
+  if (items.length === 0) {
+    list.innerHTML = '<p class="empty">No saved articles yet</p>';
+  } else {
+    list.innerHTML = items.map((item) => `
+      <a href="${item.url}" class="bookmark-card">
+        ${item.coverImage ? `<img class="bm-cover" src="${item.coverImage}" alt="${item.title}" loading="lazy" />` : '<div class="bm-placeholder"></div>'}
+        <div class="bm-body">
+          <strong>${item.title}</strong>
+          <span class="bm-type">${item.type === 'album' ? 'Album Review' : 'Daily Classical'}</span>
+        </div>
+      </a>
+    `).join('');
+  }
+</script>
+
+<style>
+  .page-title { font-size: 1.5rem; margin-bottom: 1.5rem; }
+  .empty { color: var(--color-muted); font-size: 0.9rem; }
+  .bookmarks-grid { display: grid; gap: 0.75rem; }
+  .bookmark-card { display: flex; gap: 0.75rem; align-items: center; padding: 0.65rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); text-decoration: none; color: inherit; transition: box-shadow 0.15s; }
+  .bookmark-card:hover { box-shadow: var(--shadow-md); }
+  .bm-cover { width: 48px; height: 48px; object-fit: cover; border-radius: 4px; flex-shrink: 0; }
+  .bm-placeholder { width: 48px; height: 48px; border-radius: 4px; background: var(--color-border); flex-shrink: 0; }
+  .bm-body strong { display: block; font-size: 0.85rem; color: var(--color-primary); }
+  .bm-type { font-size: 0.75rem; color: var(--color-muted); }
+</style>
