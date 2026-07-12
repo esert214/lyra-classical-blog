@@ -56,6 +56,28 @@
 - 修正 scripts/generate-article.ps1 中 slug 提示範例（`beethoven-sym5` → `dg-471489`）
 - `.gitignore` 補充 `.playwright-mcp/`、`.vscode/`、`homepage-zh.yml`
 
+## [0.4.0] — 2026-07-11
+
+### Pitchfork 風格精進
+
+- **Breadcrumb 導覽** — 取代原本的「返回列表」按鈕，改為 `首頁 › 專輯介紹 › 曲名` 格式，每一層都可點擊（AlbumDetail / DailyDetail）
+- **Meta 資訊卡** — 文章標題下方改為欄位式佈局：唱片編號 / 演出者 / 發行年份 / 類型，附 label 小字（AlbumDetail）
+- **Bookmark 書籤** — 每篇文章頂部有書籤按鈕，點擊存到瀏覽器 localStorage，按鈕切換「收藏 / 已收藏」狀態
+- **我的收藏頁面** — `/bookmarks` 列出所有已存文章（封面 + 標題 + 類型），中英文各自獨立
+- **導覽列書籤 icon** — Header 右側新增書籤圖示連結
+
+### 本次新增功能
+
+- **關於我頁面** — `/about` + `/en/about`，簡介 Lyra賞樂誌 由來與方向；導覽列新增「關於」連結
+- **作者簡介區塊** — 每篇文章底部新增 AuthorBio 元件（頭像 + 名稱 + bio + 關於連結）
+- **RSS Feed** — 安裝 `@astrojs/rss`，`/rss.xml` 輸出最新文章列表，支援 Feedly / Inoreader 等閱讀器
+- **Tags 分類頁** — `/tags/` 標籤雲（依文章數排序）、`/tags/{tag}` 列出該標籤下所有文章；中英文各自獨立
+- **Tags 可點擊** — 文章底部的標籤從純文字 `<span>` 改為可點擊的 `<a>` 連結
+
+### 頁面數量
+
+- 從 10 頁成長至 32 頁（含中英文 tags 動態路由）
+
 ## [0.1.0] — 2026-07-10
 
 ### 專案初始化
