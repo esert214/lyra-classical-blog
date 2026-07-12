@@ -17,10 +17,13 @@ const fmt = (d: Date) => locale === 'zh' ? `${d.getFullYear()} 年 ${d.getMonth(
 ---
 
 <Layout locale={locale} title={`${data.title} — ${t('siteTitle', locale)}`}>
-  <a href={`${prefix}/daily-classical`} class="back">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-    {t('backToList', locale)}
-  </a>
+  <nav class="breadcrumb">
+    <a href={prefix || '/'}>{t('navHome', locale)}</a>
+    <span class="sep">›</span>
+    <a href={`${prefix}/daily-classical`}>{t('navDaily', locale)}</a>
+    <span class="sep">›</span>
+    <span>{data.title}</span>
+  </nav>
 
   <article>
     <header class="article-header">
@@ -69,8 +72,11 @@ const fmt = (d: Date) => locale === 'zh' ? `${d.getFullYear()} 年 ${d.getMonth(
 </Layout>
 
 <style>
-  .back { display: inline-flex; align-items: center; gap: 0.35rem; margin-bottom: 1.5rem; font-size: 0.88rem; color: var(--color-muted); text-decoration: none; }
-  .back:hover { color: var(--color-accent); }
+  .breadcrumb { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 1.5rem; font-size: 0.82rem; color: var(--color-muted); }
+  .breadcrumb a { color: var(--color-muted); text-decoration: none; }
+  .breadcrumb a:hover { color: var(--color-accent); }
+  .breadcrumb .sep { color: var(--color-border); }
+  .breadcrumb span:last-child { color: var(--color-text); font-weight: 500; }
   .article-header { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 2rem; }
   .piece-badge { font-size: 2rem; color: var(--color-accent); line-height: 1; flex-shrink: 0; margin-top: 0.2rem; }
   .header-text h1 { font-size: 1.85rem; margin: 0; }
