@@ -1,5 +1,38 @@
 # Lyra賞樂誌 — 開發紀錄
 
+## [0.6.0] — 2026-07-13
+
+### 寫作風格全面翻新（Wally 敘事風）
+
+- **風格轉換** — 全部 6 篇文章（3 篇 × zh/en）從傳統古典樂評改寫為瓦力唱片行式敘事：
+  - Beethoven 5 / Abbado（dg-471489）— 以阿巴多抗癌錄音為敘事核心
+  - Three Tenors 1990（decca-4304332）— 用第一人稱電視記憶重寫
+  - Three Tenors 1994（teldec-450996200）— 新文章，道奇體育場的全球集體記憶
+  - Barber Adagio（sony-smk63088）— 從《前進高棉》電影場景切入
+- **Fact/Fiction 標記** — 每篇 body 中以 `<!-- fact: -->` / `<!-- fiction: -->` HTML comment 標示查證事實與文學創作，方便日後調整風格
+- **過往文章補標** — 重新讀取三篇舊文，加上完整 fact/fiction 標記
+
+### 繁簡檢查
+
+- 發現 `decca-4304332-zh.md` 有 3 個簡體字（创→創、过→過、万→萬），已修正
+- 建立 `check_simplified.py` 腳本供日後自動檢查
+
+### 首頁排序修正
+
+- 不同文章設為不同日期，確保 newest-first 排序正確
+- `HomePage.astro` sort 邏輯加入 `slug` 作為同日期時的穩定排序 tiebreaker
+
+### 頁面數量
+
+- 56 pages（+ new Three Tenors 1994 article zh/en）
+
+## [0.5.1] — 2026-07-13
+
+### 連結修正
+
+- `decca-4304332` relatedAlbums 中「Paris 1994」更正為「Los Angeles 1994」
+- 新增 `slug: "teldec-450996200"` 雙向連結新文章
+
 ## [0.5.0] — 2026-07-12
 
 ### RWD 響應式排版

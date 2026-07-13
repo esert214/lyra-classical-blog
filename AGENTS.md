@@ -63,6 +63,8 @@ opencode 會自動：
 8. 演出者、作曲家在 zh 檔案中以 `English（中文）` 格式填寫
 9. 完成後跑 `node scripts/validate-content.js` 確認通過
 10. 最後自動 `git add / commit / push`，不需使用者手動操作
+11. **寫作風格：採用瓦力唱片行（Wally Records）式敘事風格** — 第一人稱、情感鉤子、短段落、音樂作為人類故事的載體，避免技術分析或樂章拆解式的寫法
+12. **每句標記 fact/fiction** — 在 body 中每段／句後以 `<!-- fact: ... -->` 或 `<!-- fiction: ... -->` HTML comment 標註哪些是查證事實、哪些是文學創作，方便日後調整風格
 
 ### 或者手動建立
 
@@ -98,6 +100,20 @@ opencode 會自動：
 - 兩者皆無 → 純文字顯示（不可點擊）
 
 ## Development Lessons
+
+### 2026-07-13：確定敘事風格為 Wally 式 + fact/fiction 標記
+
+**問題：** 最初的兩篇文章（Beethoven 5、Barber Adagio）使用傳統古典樂評風格——樂章分解、結構分析、技巧描述——讀起來像教科書而非部落格。
+
+**轉折：** 寫 Three Tenors 1994 文章時意外採用了瓦力唱片行式的敘事風格（第一人稱、短段落、情感驅動），使用者確認「不錯」並要求其他文章比照辦理。
+
+**現在標準（已加入 AGENTS.md AI 規則）：**
+1. 所有新文章採用 Wally 式敘事：第一人稱、情感鉤子、短段落、音樂作為人類故事的載體
+2. 每句/段後以 `<!-- fact: -->` / `<!-- fiction: -->` HTML comment 標記哪些是查證事實、哪些是文學創作
+3. 避免技術分析（不要寫「第一樂章 Allegro con brio，C 小調」式的教科書內容）
+
+**工具：**
+- 一個 Python 腳本 `check_simplified.py` 建立於 temp 目錄，供日後檢查繁簡混用問題
 
 ### 2026-07-13：relatedAlbums 推薦了不相關的專輯
 
