@@ -26,7 +26,7 @@ node scripts/validate-content.js
 
 - **GitHub:** https://github.com/esert214/lyra-classical-blog
 - **Vercel:** https://lyra-classical-blog.vercel.app
-- After `git push`, Vercel auto-deploys
+- After `git push`, GitHub Action 觸發 Vercel Deploy Hook 自動部署
 
 ## Content Generation
 

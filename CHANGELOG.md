@@ -14,6 +14,12 @@
 - 每日一曲頁面的錄音卡片現在可以連結到對應的專輯介紹頁面或外部來源
 - 連結行為與 `relatedAlbums` 一致：`slug` 優先 → `url` 外部 → 純文字
 
+### Vercel 部署修復
+
+- 發現 Vercel 的 GitHub 整合未正確運作，自動部署失效
+- 改為 GitHub Actions + Vercel Deploy Hook 方式觸發部署
+- 每次 `git push` 到 `main` → GitHub Action 觸發 → Vercel 自動部署
+
 ## [0.2.0] — 2026-07-11
 
 ### 視覺大改版
