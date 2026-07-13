@@ -57,10 +57,12 @@ opencode 會自動：
 2. 搜尋實際專輯封面圖片，優先使用 DG / Universal Music 官方 CDN（`images.universal-music.de`）
 3. 在 `relatedAlbums` 中，若有已存在的文章則填 `slug`（內部連結），否則留空 `slug` 只填 `url`（外部連結到 DG/Presto/Amazon）
 4. **`relatedAlbums` 推薦的專輯必須與本文演出者/風格相關，不可推薦完全不同演出者的專輯**
-5. 自動掃描既有檔案的 `relatedAlbums`，雙向補上 `slug` 連結
-6. 演出者、作曲家在 zh 檔案中以 `English（中文）` 格式填寫
-7. 完成後跑 `node scripts/validate-content.js` 確認通過
-8. 最後自動 `git add / commit / push`，不需使用者手動操作
+5. **外部連結的 URL 必須經搜尋確認指向正確的專輯頁面，不可猜測或拼湊 URL**
+6. **composers 必須涵蓋曲目中所有出现的作曲家，不可人為設上限**
+7. 自動掃描既有檔案的 `relatedAlbums`，雙向補上 `slug` 連結
+8. 演出者、作曲家在 zh 檔案中以 `English（中文）` 格式填寫
+9. 完成後跑 `node scripts/validate-content.js` 確認通過
+10. 最後自動 `git add / commit / push`，不需使用者手動操作
 
 ### 或者手動建立
 
