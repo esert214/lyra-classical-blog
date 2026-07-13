@@ -78,6 +78,14 @@ opencode 會自動：
 - 兩者皆無 → 純文字顯示（不可點擊）
 - Hover 時縮圖放大 2.5 倍
 
+## Notable Recordings 連結行為
+
+每日一曲的 `notableRecordings` 支援與 `relatedAlbums` 相同的連結邏輯：
+
+- `slug` 有值 → 內部連結 `/album/{slug}`（優先）
+- `url` 有值但 `slug` 為空 → 外部連結 `target="_blank"`（含 ↗ 圖示）
+- 兩者皆無 → 純文字顯示（不可點擊）
+
 ## Color System
 
 - Primary: `#1e1b4b`（deep indigo）

@@ -63,16 +63,22 @@ const fmt = (d: Date) => locale === 'zh' ? `${d.getFullYear()} 年 ${d.getMonth(
     <section class="recordings-section">
       <h2>💿 {t('alternativeRecording', locale)}</h2>
       <div class="recording-list">
-        {data.notableRecordings.map((rec) => (
-          <div class="recording-card">
-            <div class="rec-num">♪</div>
-            <div class="rec-body">
-              <strong>{rec.performer}</strong>
-              <p class="rec-meta">{rec.label} · {rec.year}</p>
-              {rec.notes && <p class="rec-notes">{rec.notes}</p>}
-            </div>
-          </div>
-        ))}
+        {data.notableRecordings.map((rec) => {
+          const href = rec.slug ? `${prefix}/album/${rec.slug}` : rec.url || null;
+          const isExternal = !rec.slug && !!rec.url;
+          const Tag = href ? 'a' : 'div';
+          const attrs = href ? (isExternal ? { href, target: '_blank', rel: 'noopener' } : { href }) : {};
+          return (
+            <Tag class="recording-card" {...attrs}>
+              <div class="rec-num">♪</div>
+              <div class="rec-body">
+                <strong>{rec.performer}{isExternal ? <span class="external-icon"> ↗</span> : ''}</strong>
+                <p class="rec-meta">{rec.label} · {rec.year}</p>
+                {rec.notes && <p class="rec-notes">{rec.notes}</p>}
+              </div>
+            </Tag>
+          );
+        })}
       </div>
     </section>
 
@@ -111,12 +117,13 @@ const fmt = (d: Date) => locale === 'zh' ? `${d.getFullYear()} 年 ${d.getMonth(
   .recordings-section { margin: 2.5rem 0; }
   .recordings-section h2 { font-family: var(--font-sans); font-size: 1rem; color: var(--color-primary); margin-bottom: 1rem; }
   .recording-list { display: grid; gap: 0.75rem; }
-  .recording-card { display: flex; gap: 0.85rem; align-items: flex-start; padding: 1rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); transition: box-shadow 0.15s; }
-  .recording-card:hover { box-shadow: var(--shadow-md); }
+  .recording-card { display: flex; gap: 0.85rem; align-items: flex-start; padding: 1rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); transition: box-shadow 0.15s, border-color 0.15s; text-decoration: none; color: inherit; }
+  .recording-card:hover { box-shadow: var(--shadow-md); border-color: var(--color-accent); }
   .rec-num { font-size: 1.2rem; color: var(--color-accent); flex-shrink: 0; line-height: 1.4; }
   .rec-body strong { font-size: 0.95rem; }
   .rec-meta { color: var(--color-muted); font-size: 0.82rem; margin: 0.2rem 0; }
   .rec-notes { color: var(--color-text); font-size: 0.88rem; margin: 0.35rem 0 0; line-height: 1.6; }
+  .external-icon { font-size: 0.7rem; color: var(--color-accent); }
   .tags { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
   .tag { padding: 2px 12px; background: var(--color-tag-bg); color: var(--color-tag-text); border-radius: 12px; font-size: 0.78rem; font-weight: 500; }
   @media (max-width: 767px) {

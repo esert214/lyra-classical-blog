@@ -67,6 +67,8 @@ const dailyClassical = defineCollection({
       label: z.string(),
       year: z.string(),
       notes: z.string().optional(),
+      slug: z.string().optional(),
+      url: z.string().optional(),
     })),
     tags: z.array(z.string()),
   }),
