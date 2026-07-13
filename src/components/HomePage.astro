@@ -10,8 +10,14 @@ const { locale } = Astro.props;
 const albums = await getCollection('album', (e) => e.data.locale === locale);
 const dailyEntries = await getCollection('daily-classical', (e) => e.data.locale === locale);
 
-const recentAlbums = albums.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 5);
-const recentDaily = dailyEntries.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 5);
+const recentAlbums = albums.sort((a, b) => {
+  const d = b.data.date.valueOf() - a.data.date.valueOf();
+  return d !== 0 ? d : a.data.slug.localeCompare(b.data.slug);
+}).slice(0, 5);
+const recentDaily = dailyEntries.sort((a, b) => {
+  const d = b.data.date.valueOf() - a.data.date.valueOf();
+  return d !== 0 ? d : a.data.slug.localeCompare(b.data.slug);
+}).slice(0, 5);
 const prefix = locale === 'zh' ? '' : '/en';
 ---
 
