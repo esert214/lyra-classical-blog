@@ -112,4 +112,10 @@ const prefix = locale === 'zh' ? '' : '/en';
     background: var(--color-accent-light); color: var(--color-tag-text);
     border-radius: 10px;
   }
+  @media (max-width: 767px) {
+    .hero { padding: 3rem 0 2.5rem; }
+    .hero h1 { font-size: 1.8rem; }
+    .hero-sub { font-size: 0.9rem; }
+    .card-grid { grid-template-columns: 1fr; }
+  }
 </style>

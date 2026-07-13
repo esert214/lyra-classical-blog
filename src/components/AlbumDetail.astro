@@ -191,4 +191,12 @@ const fmt = (d: Date) => locale === 'zh' ? `${d.getFullYear()} 年 ${d.getMonth(
   .external-icon { font-size: 0.7rem; color: var(--color-accent); }
   .tags { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
   .tag { padding: 2px 12px; background: var(--color-tag-bg); color: var(--color-tag-text); border-radius: 12px; font-size: 0.78rem; font-weight: 500; }
+  @media (max-width: 767px) {
+    .header-text h1 { font-size: 1.35rem; }
+    .cover { max-height: 240px; }
+    .meta-grid { gap: 0.5rem 0.75rem; }
+    .related-grid { grid-template-columns: 1fr; }
+    .people-grid { gap: 0.65rem; }
+    .person-card { padding: 0.85rem; }
+  }
 </style>
