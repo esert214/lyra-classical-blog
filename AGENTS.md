@@ -95,6 +95,25 @@ opencode 會自動：
 - `url` 有值但 `slug` 為空 → 外部連結 `target="_blank"`（含 ↗ 圖示）
 - 兩者皆無 → 純文字顯示（不可點擊）
 
+## Development Lessons
+
+### 2026-07-13：relatedAlbums 推薦了不相關的專輯
+
+**問題：** 為三大男高音（Three Tenors）的文章建立 `relatedAlbums` 時，AI 自動推薦了貝多芬第五號交響曲（Berlin Philharmonic / Abbado），因為那是當時唯一已存在的文章。但這兩張專輯的演出者、風格完全不同，推薦給使用者毫无意義。
+
+**根因：** AI 在沒有已有文章可連結時，會機械式地填入任何現有文章的 `slug`，忽略了「演出者/風格是否相關」的判斷。
+
+**解方：**
+1. 建立 `scripts/validate-content.js` 驗證腳本，檢查：
+   - `relatedAlbums` 的 `slug` 必須對應到已存在的文章
+   - 外部連結的 artist 必須與當前文章的 artist/tags 有重疊
+   - `relatedAlbums` 必須有 `slug` 或 `url`，不可兩者皆空
+   - slug 格式必須包含 `-`
+2. 加入 `prebuild` hook，`npm run build` 前自動驗證
+3. AGENTS.md 規則明確記載：「不可推薦完全不同演出者的專輯」
+
+**經驗：** 當已有文章數量少時，寧可 `relatedAlbums` 留空或只放外部連結到同系列/同演出者的專輯，也不要硬塞不相關的內部連結。
+
 ## Color System
 
 - Primary: `#1e1b4b`（deep indigo）
