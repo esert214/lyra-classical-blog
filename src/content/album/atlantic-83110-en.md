@@ -79,6 +79,9 @@ relatedAlbums:
   - title: "The Three Tenors in Concert — Los Angeles 1994"
     artist: "Pavarotti / Domingo / Carreras"
     slug: "teldec-450996200"
+  - title: "Pavarotti: King of the High C's"
+    artist: "Luciano Pavarotti"
+    slug: "decca-421326"
 tags: ["Three Tenors", "Pavarotti", "Domingo", "Carreras", "Live Recording", "Opera", "Paris"]
 ---
 
