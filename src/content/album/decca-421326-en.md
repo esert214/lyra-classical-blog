@@ -26,7 +26,8 @@ composers:
     bio: "Italian opera composer (1801–1835), master of bel canto whose works include Norma, I Puritani, and La Sonnambula."
   - name: "Giacomo Puccini"
     bio: "Italian opera composer (1858–1924), whose masterworks include La Bohème, Tosca, Madama Butterfly, and Turandot."
-hasPerformedInTaiwan: false
+hasPerformedInTaiwan: true
+taiwanVisitDetail: "Pavarotti first performed in Taiwan in February 1990 at the National Concert Hall in Taipei, where ticket prices set a new record for concerts in Taiwan. He returned for his farewell tour in December 2005 at Taichung Stadium, with all 21,000 tickets sold out. This concert would be his final public performance before his death in 2007."
 relatedAlbums:
   - title: "The Three Tenors in Concert — Rome 1990"
     artist: "Pavarotti / Domingo / Carreras"

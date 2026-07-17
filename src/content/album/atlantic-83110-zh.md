@@ -72,6 +72,7 @@ composers:
   - name: "Lalo Schifrin（拉羅·薛弗林）"
     bio: "阿根廷裔美國作曲家與編曲家（1932–），為本場演唱會混合曲的編曲者。"
 hasPerformedInTaiwan: false
+taiwanVisitDetail: "三大男高音雖未以完整組合在台演出，但三位成員皆曾多次來台：帕華洛帝於 1990 年與 2005 年在台北及台中舉行個人演唱會（2005 年台中場為其生前最後公開演出）；多明哥於 2002 年、2009 年、2011 年等多次來台演出；卡列拉斯亦曾多次訪台舉行獨唱會。"
 relatedAlbums:
   - title: "The Three Tenors in Concert — Rome 1990"
     artist: "Pavarotti / Domingo / Carreras"
