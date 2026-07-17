@@ -61,8 +61,13 @@ opencode 會自動：
 6. **composers 必須涵蓋曲目中所有出现的作曲家，不可人為設上限**
 7. 自動掃描既有檔案的 `relatedAlbums`，雙向補上 `slug` 連結
 8. 演出者、作曲家在 zh 檔案中以 `English（中文）` 格式填寫
-9. 完成後跑 `node scripts/validate-content.js` 確認通過
-10. 最後自動 `git add / commit / push`，不需使用者手動操作
+9. **生成後必須逐一檢查以下 frontmatter，不可遺漏：**
+   - `hasPerformedInTaiwan`：不可都是 `false`，需查證演出者是否來過台灣
+   - `taiwanVisitDetail`：不論 true/false 都必須填寫原因
+   - `upcomingConcerts`：如有近期演出必須填寫
+   - `relatedAlbums`：優先以 `slug` 連結同演出者的現有文章；無現有文章則以外部 `url` 推薦同演出者的其他專輯
+10. 完成後跑 `node scripts/validate-content.js` 確認通過（若僅有 warnings 無 errors 仍可提交）
+11. 最後自動 `git add / commit / push`，不需使用者手動操作
 11. **寫作風格：採用瓦力唱片行（Wally Records）式敘事風格** — 第一人稱、情感鉤子、短段落、音樂作為人類故事的載體，避免技術分析或樂章拆解式的寫法
 12. **每句標記 fact/fiction** — 在 body 中每段／句後以 `<!-- fact: ... -->` 或 `<!-- fiction: ... -->` HTML comment 標註哪些是查證事實、哪些是文學創作，方便日後調整風格
 

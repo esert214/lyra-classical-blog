@@ -200,6 +200,26 @@ function validateFile(filePath, collection) {
       errors.push(`${fileName}: filename does not contain locale "${fm.locale}"`);
     }
   }
+
+  // Rule 5: hasPerformedInTaiwan must have corresponding taiwanVisitDetail
+  if (fm.hasPerformedInTaiwan === true) {
+    if (!fm.taiwanVisitDetail || fm.taiwanVisitDetail.trim() === '') {
+      errors.push(`${fileName}: hasPerformedInTaiwan is true but taiwanVisitDetail is missing or empty`);
+    }
+  }
+  if (typeof fm.hasPerformedInTaiwan === 'boolean' && !fm.taiwanVisitDetail) {
+    warnings.push(`${fileName}: hasPerformedInTaiwan is ${fm.hasPerformedInTaiwan} but taiwanVisitDetail is missing — add context (e.g. why false, or performance history if true)`);
+  }
+
+  // Rule 6: relatedAlbums should not be empty
+  if (!fm.relatedAlbums || (Array.isArray(fm.relatedAlbums) && fm.relatedAlbums.length === 0)) {
+    warnings.push(`${fileName}: relatedAlbums is empty — consider adding same-artist recommendations or relevant related albums`);
+  }
+
+  // Rule 7: upcomingConcerts should be considered for active artists
+  if (!fm.upcomingConcerts) {
+    warnings.push(`${fileName}: upcomingConcerts is missing — consider adding future concert dates if applicable`);
+  }
 }
 
 // ── main ─────────────────────────────────────────────────────────────
