@@ -48,10 +48,10 @@ relatedAlbums:
     url: "https://www.prestomusic.com/classical/products/9772736--les-miserables-the-complete-symphonic-recording"
   - title: "Alfie Boe — Bring Him Home"
     artist: "Alfie Boe"
-    url: "https://www.amazon.com/Bring-Him-Home-Alfie-Boe/dp/B001C3IX18"
+    url: "https://www.amazon.com/Bring-Him-Home-Alfie-Boe/dp/B004CCS11W"
   - title: "Lea Salonga — The Ultimate Collection"
     artist: "Lea Salonga"
-    url: "https://www.amazon.com/Ultimate-Collection-Lea-Salonga/dp/B00IAKJPB6"
+    url: "https://www.amazon.com/Inspired-Lea-Salonga/dp/B000MXPE3S"
 upcomingConcerts:
   - date: "2026-03"
     location: "Beijing, China"
