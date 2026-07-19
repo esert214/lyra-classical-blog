@@ -28,6 +28,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "主演魅影的 Ramin Karimloo 於 2025 年 9 月首度來台，於台北流行音樂中心策劃並主演《重聚 The Reunion》音樂劇明星演唱會，與多位百老匯、西區演員同台。Sierra Boggess 與 Hadley Fraser 目前無來台紀錄。Andrew Lloyd Webber 亦無來台紀錄。"
 relatedAlbums:
+  - title: "Les Misérables: 25th Anniversary Concert at the O2（悲慘世界：25周年紀念演唱會）"
+    artist: "Alain Boublil & Claude-Michel Schönberg（阿蘭·鮑伯利／克勞德-米歇爾·荀伯格）"
+    slug: "universal-61118326"
   - title: "The Three Tenors in Concert — Los Angeles 1994（三大男高音洛杉磯 1994）"
     artist: "Pavarotti / Domingo / Carreras（帕華洛帝／多明哥／卡列拉斯）"
     slug: "teldec-450996200"
