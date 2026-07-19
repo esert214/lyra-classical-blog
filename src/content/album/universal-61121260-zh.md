@@ -32,9 +32,9 @@ relatedAlbums:
   - title: "Les Misérables: 25th Anniversary Concert at the O2（悲慘世界：25周年紀念演唱會）"
     artist: "Alain Boublil & Claude-Michel Schönberg（阿蘭·鮑伯利／克勞德-米歇爾·荀伯格）"
     slug: "universal-61118326"
-  - title: "The Three Tenors in Concert — Los Angeles 1994（三大男高音洛杉磯 1994）"
-    artist: "Pavarotti / Domingo / Carreras（帕華洛帝／多明哥／卡列拉斯）"
-    slug: "teldec-450996200"
+  - title: "The Phantom of the Opera — Original London Cast"
+    artist: "Andrew Lloyd Webber（安德魯·洛伊·韋伯）"
+    url: "https://www.prestomusic.com/classical/products/8649750--the-phantom-of-the-opera"
 tags: ["Andrew Lloyd Webber（安德魯·洛伊·韋伯）", "Phantom of the Opera（歌劇魅影）", "Musical（音樂劇）", "Live（現場）", "Royal Albert Hall（皇家亞伯特音樂廳）", "Broadway（百老匯）"]
 ---
 

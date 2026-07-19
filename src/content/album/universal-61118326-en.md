@@ -45,7 +45,7 @@ relatedAlbums:
     slug: "universal-61121260"
   - title: "Les Misérables: The Complete Symphonic Recording"
     artist: "Various"
-    url: "https://www.prestomusic.com/classical/products/8356249--les-miserables-the-complete-symphonic-recording"
+    url: "https://www.prestomusic.com/classical/products/9772736--les-miserables-the-complete-symphonic-recording"
   - title: "Alfie Boe — Bring Him Home"
     artist: "Alfie Boe"
     url: "https://www.amazon.com/Bring-Him-Home-Alfie-Boe/dp/B001C3IX18"
