@@ -51,7 +51,19 @@ relatedAlbums:
   - title: "Lea Salonga — The Ultimate Collection"
     artist: "Lea Salonga"
     url: "https://www.amazon.com/Ultimate-Collection-Lea-Salonga/dp/B00IAKJPB6"
-upcomingConcerts: "Alfie Boe 2026 年 3 月於中國北京、上海、深圳、廈門舉行首次中國巡演，台灣場次目前未定。"
+upcomingConcerts:
+  - date: "2026-03"
+    location: "Beijing, China"
+    event: "Alfie Boe China Tour 2026"
+  - date: "2026-03"
+    location: "Shanghai, China"
+    event: "Alfie Boe China Tour 2026"
+  - date: "2026-03"
+    location: "Shenzhen, China"
+    event: "Alfie Boe China Tour 2026"
+  - date: "2026-03"
+    location: "Xiamen, China"
+    event: "Alfie Boe China Tour 2026"
 tags: ["Les Misérables（悲慘世界）", "Claude-Michel Schönberg（克勞德-米歇爾·荀伯格）", "Alain Boublil（阿蘭·鮑伯利）", "Musical（音樂劇）", "Live at the O2（O2 現場）", "Victor Hugo（維克多·雨果）", "Broadway（百老匯）", "West End（西區）"]
 ---
 ## 三種唱法

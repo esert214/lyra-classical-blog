@@ -51,7 +51,19 @@ relatedAlbums:
   - title: "Lea Salonga — The Ultimate Collection"
     artist: "Lea Salonga"
     url: "https://www.amazon.com/Ultimate-Collection-Lea-Salonga/dp/B00IAKJPB6"
-upcomingConcerts: "Alfie Boe's first China tour runs March 2026 (Beijing, Shanghai, Shenzhen, Xiamen). No Taiwan date currently scheduled."
+upcomingConcerts:
+  - date: "2026-03"
+    location: "Beijing, China"
+    event: "Alfie Boe China Tour 2026"
+  - date: "2026-03"
+    location: "Shanghai, China"
+    event: "Alfie Boe China Tour 2026"
+  - date: "2026-03"
+    location: "Shenzhen, China"
+    event: "Alfie Boe China Tour 2026"
+  - date: "2026-03"
+    location: "Xiamen, China"
+    event: "Alfie Boe China Tour 2026"
 tags: ["Les Misérables", "Claude-Michel Schönberg", "Alain Boublil", "Musical", "Live at the O2", "Victor Hugo", "Broadway", "West End", "Alfie Boe", "Lea Salonga", "Ramin Karimloo"]
 ---
 ## Three Voices
