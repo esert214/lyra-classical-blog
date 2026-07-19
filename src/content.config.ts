@@ -47,6 +47,7 @@ const album = defineCollection({
       url: z.string().optional(),
     })).optional(),
     coverImage: z.string().optional(),
+    coverImageSource: z.string().optional(),
     tags: z.array(z.string()),
   }),
 });
@@ -62,6 +63,7 @@ const dailyClassical = defineCollection({
     period: z.string(),
     year: z.string(),
     coverImage: z.string().optional(),
+    coverImageSource: z.string().optional(),
     notableRecordings: z.array(z.object({
       performer: z.string(),
       label: z.string(),

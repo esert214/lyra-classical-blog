@@ -46,6 +46,7 @@ const fmt = (d: Date) => locale === 'zh' ? `${d.getFullYear()} 年 ${d.getMonth(
       </div>
     </header>
     {data.coverImage && <img class="cover" src={data.coverImage} alt={data.title} />}
+    {data.coverImageSource && <span class="cover-source">Photo: {data.coverImageSource}</span>}
 
     <div class="content"><Content /></div>
 
@@ -106,6 +107,7 @@ const fmt = (d: Date) => locale === 'zh' ? `${d.getFullYear()} 年 ${d.getMonth(
   .bookmark-btn.saved { background: var(--color-accent-light); border-color: var(--color-accent); color: var(--color-accent); }
   .bookmark-btn.saved .bookmark-icon { fill: var(--color-accent); }
   .cover { width: 100%; max-height: 360px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 2rem; box-shadow: var(--shadow-md); }
+  .cover-source { display: block; font-size: 0.7rem; color: var(--muted); margin-top: -1.5rem; margin-bottom: 1rem; text-align: right; }
   .content { line-height: 1.85; font-size: 1rem; color: var(--color-text); }
   .content :global(p) { margin: 1.2em 0; }
   .composer-section { margin: 2.5rem 0; }

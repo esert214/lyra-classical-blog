@@ -9,6 +9,7 @@ releaseDate: "1973"
 genre: "Opera Arias / Compilation"
 catalogNumber: "Decca 421 326-2"
 coverImage: "https://i.ebayimg.com/images/g/DoAAAOSwmoFlHtJp/s-l1600.webp"
+coverImageSource: "eBay"
 performers:
   - name: "Luciano Pavarotti"
     role: "Tenor"

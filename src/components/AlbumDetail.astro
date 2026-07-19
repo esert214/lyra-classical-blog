@@ -29,6 +29,7 @@ const fmt = (d: Date) => locale === 'zh' ? `${d.getFullYear()} 年 ${d.getMonth(
   <article>
     <header class="article-header">
       {data.coverImage && <img class="cover" src={data.coverImage} alt={data.album} />}
+      {data.coverImageSource && <span class="cover-source">Photo: {data.coverImageSource}</span>}
       <div class="header-text">
         <h1>{data.album}</h1>
         <div class="meta-grid">
@@ -149,6 +150,7 @@ const fmt = (d: Date) => locale === 'zh' ? `${d.getFullYear()} 年 ${d.getMonth(
   .breadcrumb span:last-child { color: var(--color-text); font-weight: 500; }
   .article-header { margin-bottom: 2rem; }
   .cover { width: 100%; max-height: 400px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1.5rem; box-shadow: var(--shadow-md); }
+  .cover-source { display: block; font-size: 0.7rem; color: var(--muted); margin-top: -1rem; margin-bottom: 1rem; text-align: right; }
   .header-text h1 { font-size: 1.85rem; margin: 0; }
   .meta-grid { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin-top: 0.5rem; }
   .meta-item { display: flex; flex-direction: column; gap: 0.1rem; }

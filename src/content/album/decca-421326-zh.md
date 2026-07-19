@@ -9,6 +9,7 @@ releaseDate: "1973"
 genre: "歌劇詠嘆調 / 合輯"
 catalogNumber: "Decca 421 326-2"
 coverImage: "https://i.ebayimg.com/images/g/DoAAAOSwmoFlHtJp/s-l1600.webp"
+coverImageSource: "eBay"
 performers:
   - name: "Luciano Pavarotti（盧奇亞諾·帕華洛帝）"
     role: "Tenor（男高音）"

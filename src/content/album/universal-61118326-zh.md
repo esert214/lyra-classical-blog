@@ -9,6 +9,7 @@ releaseDate: "2010"
 genre: "音樂劇 / 現場錄音"
 catalogNumber: "Universal 61118326 / 201302BD066"
 coverImage: "https://m.media-amazon.com/images/I/51r1zJ1H3zL._SL500_.jpg"
+coverImageSource: "Amazon"
 performers:
   - name: "Alfie Boe（阿爾菲·博伊）"
     role: "Jean Valjean（尚萬強／冉阿讓）"

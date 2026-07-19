@@ -9,6 +9,7 @@ releaseDate: "2010"
 genre: "Musical / Live Recording"
 catalogNumber: "Universal 61118326 / 201302BD066"
 coverImage: "https://m.media-amazon.com/images/I/51r1zJ1H3zL._SL500_.jpg"
+coverImageSource: "Amazon"
 performers:
   - name: "Alfie Boe"
     role: "Jean Valjean"

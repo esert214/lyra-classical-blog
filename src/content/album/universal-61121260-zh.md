@@ -9,6 +9,7 @@ releaseDate: "2011"
 genre: "音樂劇 / 現場錄音"
 catalogNumber: "Universal 61121260 / 20142BD104"
 coverImage: "https://multimedia.bbycastatic.ca/multimedia/products/500x500/182/18209/18209558.jpeg"
+coverImageSource: "Best Buy Canada"
 performers:
   - name: "Ramin Karimloo（拉敏·卡利姆盧）"
     role: "Phantom of the Opera（魅影）"

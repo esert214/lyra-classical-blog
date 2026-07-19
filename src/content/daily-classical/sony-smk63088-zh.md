@@ -9,6 +9,7 @@ composer:
 period: "20th Century（20世紀）"
 year: "1936"
 coverImage: "https://images.universal-music.de/img/assets/515/515724/4/1280/bernstein-barber-adagio-for-strings.jpg"
+coverImageSource: "Universal Music"
 notableRecordings:
   - performer: "Abbado / Berlin Philharmonic（阿巴多／柏林愛樂）"
     label: "DG"

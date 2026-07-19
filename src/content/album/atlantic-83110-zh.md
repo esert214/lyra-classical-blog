@@ -9,6 +9,7 @@ releaseDate: "1998"
 genre: "歌劇聲樂 / 現場錄音"
 catalogNumber: "Atlantic 83110-2"
 coverImage: "https://upload.wikimedia.org/wikipedia/en/f/f4/Three_Tenors_-_Paris_1998_album_cover.jpg"
+coverImageSource: "Wikimedia Commons"
 performers:
   - name: "Luciano Pavarotti（盧奇亞諾·帕華洛帝）"
     role: "Tenor（男高音）"
