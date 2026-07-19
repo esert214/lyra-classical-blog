@@ -7,7 +7,7 @@ type TranslationMap = Record<string, { zh: string; en: string }>;
 const translations: TranslationMap = {
   siteTitle: { zh: 'Lyra賞樂誌', en: 'Lyra Classical' },
   siteDescription: {
-    zh: '古典音樂深度賞析 — 專輯介紹、名曲導聆、演奏者專訪',
+    zh: '古典音樂深度賞析 — 專輯介紹、名曲導聆',
     en: 'Classical music appreciation — album reviews, masterwork guides, performer features',
   },
   navHome: { zh: '首頁', en: 'Home' },

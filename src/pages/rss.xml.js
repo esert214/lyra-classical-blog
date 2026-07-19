@@ -21,7 +21,7 @@ export async function GET(context) {
   items.sort((a, b) => b.pubDate.valueOf() - a.pubDate.valueOf());
   return rss({
     title: 'Lyra賞樂誌',
-    description: '古典音樂深度賞析 — 專輯介紹、名曲導聆、演奏者專訪',
+    description: '古典音樂深度賞析 — 專輯介紹、名曲導聆',
     site: context.site || 'https://lyra-classical-blog.vercel.app',
     items,
   });
