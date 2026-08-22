@@ -2,11 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { t, type Locale } from '../i18n/utils';
+import { isPublished } from '../lib/publish';
 
 export interface Props { locale: Locale }
 
 const { locale } = Astro.props;
-const entries = await getCollection('album', (e) => e.data.locale === locale);
+const entries = await getCollection('album', (e) => e.data.locale === locale && isPublished(e.data.date));
 const sorted = entries.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const prefix = locale === 'zh' ? '' : '/en';
 ---

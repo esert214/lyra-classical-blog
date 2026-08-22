@@ -29,6 +29,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "主演魅影的 Ramin Karimloo 於 2025 年 9 月首度來台，於台北流行音樂中心策劃並主演《重聚 The Reunion》音樂劇明星演唱會，與多位百老匯、西區演員同台。Sierra Boggess 與 Hadley Fraser 目前無來台紀錄。Andrew Lloyd Webber 亦無來台紀錄。"
 relatedAlbums:
+  - title: "歌劇魅影：原倫敦卡司錄音（Decca 重製版）"
+    artist: "Andrew Lloyd Webber（安德魯·洛伊·韋伯）"
+    slug: "decca-5439282"
   - title: "Les Misérables: 25th Anniversary Concert at the O2（悲慘世界：25周年紀念演唱會）"
     artist: "Alain Boublil & Claude-Michel Schönberg（阿蘭·鮑伯利／克勞德-米歇爾·荀伯格）"
     slug: "universal-61118326"

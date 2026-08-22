@@ -2,13 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { t, type Locale } from '../i18n/utils';
+import { isPublished } from '../lib/publish';
 
 export interface Props { locale: Locale }
 
 const { locale } = Astro.props;
 
-const albums = await getCollection('album', (e) => e.data.locale === locale);
-const dailyEntries = await getCollection('daily-classical', (e) => e.data.locale === locale);
+const albums = await getCollection('album', (e) => e.data.locale === locale && isPublished(e.data.date));
+const dailyEntries = await getCollection('daily-classical', (e) => e.data.locale === locale && isPublished(e.data.date));
 
 const recentAlbums = albums.sort((a, b) => {
   const d = b.data.date.valueOf() - a.data.date.valueOf();

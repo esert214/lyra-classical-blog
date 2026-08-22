@@ -3,6 +3,9 @@ name: Deploy to Vercel
 on:
   push:
     branches: [main]
+  schedule:
+    # UTC 16:05 = Taiwan time 00:05 daily — rebuild so newly "unlocked" (dated today or earlier) articles go live
+    - cron: '5 16 * * *'
 
 jobs:
   deploy:

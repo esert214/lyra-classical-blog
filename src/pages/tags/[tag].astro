@@ -2,11 +2,12 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { t } from '../../i18n/utils';
+import { isPublished } from '../../lib/publish';
 
 const locale = 'zh';
 export async function getStaticPaths() {
-  const albums = await getCollection('album', (e) => e.data.locale === 'zh');
-  const dailies = await getCollection('daily-classical', (e) => e.data.locale === 'zh');
+  const albums = await getCollection('album', (e) => e.data.locale === 'zh' && isPublished(e.data.date));
+  const dailies = await getCollection('daily-classical', (e) => e.data.locale === 'zh' && isPublished(e.data.date));
   const tags = new Set();
   for (const e of [...albums, ...dailies]) {
     for (const tag of e.data.tags) tags.add(tag);
@@ -15,8 +16,8 @@ export async function getStaticPaths() {
 }
 
 const { tag } = Astro.params;
-const allAlbums = await getCollection('album', (e) => e.data.locale === locale && e.data.tags.includes(tag));
-const allDailies = await getCollection('daily-classical', (e) => e.data.locale === locale && e.data.tags.includes(tag));
+const allAlbums = await getCollection('album', (e) => e.data.locale === locale && e.data.tags.includes(tag) && isPublished(e.data.date));
+const allDailies = await getCollection('daily-classical', (e) => e.data.locale === locale && e.data.tags.includes(tag) && isPublished(e.data.date));
 const entries = [...allAlbums, ...allDailies].sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 

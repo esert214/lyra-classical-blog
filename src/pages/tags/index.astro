@@ -2,10 +2,11 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 import { t } from '../../i18n/utils';
+import { isPublished } from '../../lib/publish';
 
 const locale = 'zh';
-const albums = await getCollection('album', (e) => e.data.locale === locale);
-const dailies = await getCollection('daily-classical', (e) => e.data.locale === locale);
+const albums = await getCollection('album', (e) => e.data.locale === locale && isPublished(e.data.date));
+const dailies = await getCollection('daily-classical', (e) => e.data.locale === locale && isPublished(e.data.date));
 const tagMap = new Map();
 for (const e of [...albums, ...dailies]) {
   for (const tag of e.data.tags) {

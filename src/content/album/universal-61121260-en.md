@@ -29,6 +29,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "Ramin Karimloo made his Taiwan debut in September 2025, curating and starring in The Reunion musical star concert at the Taipei Music Center alongside fellow Broadway and West End performers. Sierra Boggess, Hadley Fraser, and Andrew Lloyd Webber have not performed in Taiwan."
 relatedAlbums:
+  - title: "The Phantom of the Opera (Original 1986 London Cast)"
+    artist: "Andrew Lloyd Webber"
+    slug: "decca-5439282"
   - title: "Les Misérables: 25th Anniversary Concert at the O2"
     artist: "Alain Boublil & Claude-Michel Schönberg"
     slug: "universal-61118326"
