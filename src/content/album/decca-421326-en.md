@@ -30,6 +30,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "Pavarotti first performed in Taiwan in February 1990 at the National Concert Hall in Taipei, where ticket prices set a new record for concerts in Taiwan. He returned for his farewell tour in December 2005 at Taichung Stadium, with all 21,000 tickets sold out. This concert would be his final public performance before his death in 2007."
 relatedAlbums:
+  - title: "Netrebko: Le nozze di Figaro (Salzburg, Harnoncourt)"
+    artist: "Anna Netrebko / Nikolaus Harnoncourt / Vienna Philharmonic"
+    slug: "dg-4776558"
   - title: "The Three Tenors in Concert — Rome 1990"
     artist: "Pavarotti / Domingo / Carreras"
     slug: "decca-4304332"

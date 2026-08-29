@@ -33,6 +33,9 @@ upcomingConcerts:
     location: "美國巡演"
     event: "Leslie Odom Jr. 聖誕巡演（2026 年 11–12 月）"
 relatedAlbums:
+  - title: "《Hadestown》百老匯原卡司原聲帶"
+    artist: "Hadestown 百老匯原卡司（Anaïs Mitchell）"
+    slug: "singitagain-7323880328"
   - title: "《Come From Away》原聲帶"
     artist: "Irene Sankoff & David Hein"
     slug: "concord-mc00001"

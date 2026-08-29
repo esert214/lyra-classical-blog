@@ -26,6 +26,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "1993 年 6 月，「波修瓦明星芭蕾舞團」曾於台北國父紀念館演出《天鵝湖》第二幕與多段芭蕾小品（首席名伶 Bessmertnova 親自登台），為波修瓦舞者首次來台。本片主演 Zakharova 與 Rodkin 個人目前查無來台演出紀錄。"
 relatedAlbums:
+  - title: "葛濟夫×維也納愛樂：柴可夫斯基交響曲 4-5-6"
+    artist: "Valery Gergiev／維也納愛樂"
+    slug: "philips-4756315"
   - title: "La Bayadère — Bolshoi Ballet（Zakharova 主演）"
     artist: "Bolshoi Ballet / Pavel Sorokin"
     url: "https://www.naxos.com/CatalogueDetail/?id=BAC112"

@@ -23,6 +23,9 @@ composers:
 hasPerformedInTaiwan: false
 taiwanVisitDetail: "Come From Away has never been staged in Taiwan (no licensed production or tour). Its Asian record includes the Seoul Korean version (November 2023–February 2024; Seoul was the eighth city worldwide to stage it) and Japan (March–April 2024: Tokyo's Nissei Theatre, Osaka, Nagoya). Jenn Colella has no documented performances in Taiwan."
 relatedAlbums:
+  - title: "Hadestown (Original Broadway Cast Recording)"
+    artist: "Hadestown Original Broadway Cast (Anaïs Mitchell)"
+    slug: "singitagain-7323880328"
   - title: "Hamilton (Original Broadway Cast Recording)"
     artist: "Lin-Manuel Miranda"
     slug: "atlantic-551093"

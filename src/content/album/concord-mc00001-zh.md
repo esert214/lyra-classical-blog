@@ -23,6 +23,9 @@ composers:
 hasPerformedInTaiwan: false
 taiwanVisitDetail: "《Come From Away》從未在台灣上演（無授權版、無巡演）。亞洲演出紀錄：首爾韓文版 2023 年 11 月至 2024 年 2 月（首爾為全球第八個上演城市）、日本 2024 年 3–4 月（東京日生劇場、大阪、名古屋）。Jenn Colella 亦查無來台紀錄。"
 relatedAlbums:
+  - title: "《Hadestown》百老匯原卡司原聲帶"
+    artist: "Hadestown 百老匯原卡司（Anaïs Mitchell）"
+    slug: "singitagain-7323880328"
   - title: "《Hamilton》百老匯原卡司原聲帶"
     artist: "Lin-Manuel Miranda"
     slug: "atlantic-551093"

@@ -26,6 +26,9 @@ composers:
 hasPerformedInTaiwan: false
 taiwanVisitDetail: "女高音 Sondra Radvanovsky 與指揮 Enrique Mazzola 目前查無來台演出紀錄。Radvanovsky 演出足跡逾千場，未見台灣場次。"
 relatedAlbums:
+  - title: "帕帕諾《波西米亞人》：普契尼（Alagna／Vaduva）"
+    artist: "Antonio Pappano／Philharmonia Orchestra"
+    slug: "emi-5865059"
   - title: "梅佐莉《The Listeners》"
     artist: "Nicole Heaston / 芝加哥抒情歌劇院 / Enrique Mazzola"
     slug: "pentatone-5187530"

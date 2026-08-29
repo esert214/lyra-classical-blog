@@ -26,6 +26,9 @@ composers:
 hasPerformedInTaiwan: false
 taiwanVisitDetail: "Soprano Sondra Radvanovsky and conductor Enrique Mazzola have no documented performances in Taiwan. Radvanovsky's career spans well over a thousand performances, with no Taiwan dates found."
 relatedAlbums:
+  - title: "Pappano: La Bohème (Puccini, with Alagna/Vaduva)"
+    artist: "Antonio Pappano / Philharmonia Orchestra"
+    slug: "emi-5865059"
   - title: "Mazzoli: The Listeners"
     artist: "Nicole Heaston / Lyric Opera of Chicago / Enrique Mazzola"
     slug: "pentatone-5187530"

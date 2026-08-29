@@ -26,6 +26,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "In June 1993, the 'Bolshoi Ballet Stars' ensemble performed Act II of Swan Lake and other ballet pieces at the Sun Yat-sen Memorial Hall in Taipei, with legendary prima Natalia Bessmertnova dancing—marking the first visit by Bolshoi dancers to Taiwan. The stars of this film, Zakharova and Rodkin, have no documented personal performances in Taiwan."
 relatedAlbums:
+  - title: "Gergiev × Vienna Philharmonic: Tchaikovsky Symphonies 4-5-6"
+    artist: "Valery Gergiev / Vienna Philharmonic"
+    slug: "philips-4756315"
   - title: "La Bayadère — Bolshoi Ballet (starring Zakharova)"
     artist: "Bolshoi Ballet / Pavel Sorokin"
     url: "https://www.naxos.com/CatalogueDetail/?id=BAC112"

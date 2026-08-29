@@ -30,6 +30,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "帕華洛帝曾於 1990 年 2 月首次來台，於台北國家音樂廳舉行演唱會，當時票價創下台灣音樂會紀錄。2005 年 12 月他再次來台，於台中體育場舉行告別巡迴演唱會，全場 21,000 張門票銷售一空，這也是帕華洛帝生前最後一場公開演出。"
 relatedAlbums:
+  - title: "涅翠柯《費加洛婚禮》：薩爾茲堡之夜（Harnoncourt）"
+    artist: "Anna Netrebko（涅翠柯）／Nikolaus Harnoncourt／維也納愛樂"
+    slug: "dg-4776558"
   - title: "The Three Tenors in Concert — Rome 1990"
     artist: "Pavarotti / Domingo / Carreras"
     slug: "decca-4304332"
