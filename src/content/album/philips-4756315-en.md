@@ -23,6 +23,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "Gergiev has toured Taiwan four times with the Mariinsky Theatre: first visit to Taipei in 2002, Tainan & Taipei in 2014, Wagner's Das Rheingold in Oct 2016, and a full Swan Lake in Jul 2019."
 relatedAlbums:
+  - title: "Shostakovich: Symphonies Nos. 4, 5 & 6"
+    artist: "Oslo Philharmonic / Klaus Mäkelä"
+    slug: "decca-4854637"
   - title: "Tchaikovsky: Swan Lake — Bolshoi Ballet"
     artist: "Bolshoi Ballet / Pavel Sorokin"
     slug: "belair-bac119"

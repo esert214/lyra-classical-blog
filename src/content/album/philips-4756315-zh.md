@@ -23,6 +23,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "葛濟夫曾率馬林斯基歌劇暨芭蕾舞劇院四度造訪台灣：2002 年首訪台北、2014 年台南與台北、2016 年 10 月演出華格納《萊茵的黃金》、2019 年 7 月演出全本《天鵝湖》。"
 relatedAlbums:
+  - title: "麥凱萊指揮蕭士塔高維奇第四、五、六號交響曲"
+    artist: "Oslo Philharmonic / Klaus Mäkelä"
+    slug: "decca-4854637"
   - title: "柴可夫斯基《天鵝湖》— 莫斯科大劇院芭蕾舞團"
     artist: "莫斯科大劇院芭蕾舞團（Bolshoi Ballet）／Pavel Sorokin"
     slug: "belair-bac119"

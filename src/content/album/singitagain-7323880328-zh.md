@@ -33,6 +33,9 @@ upcomingConcerts:
     location: "America"
     event: "《Hadestown》舞台版改編電影上映"
 relatedAlbums:
+  - title: "《局外人》（The Outsiders）百老匯原卡司錄音"
+    artist: "Original Broadway Cast of The Outsiders"
+    slug: "sony-196871985772"
   - title: "《Hamilton》百老匯原卡司原聲帶"
     artist: "Lin-Manuel Miranda（林-曼努爾·米蘭達）等百老匯原卡司"
     slug: "atlantic-551093"

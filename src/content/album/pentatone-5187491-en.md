@@ -26,6 +26,9 @@ composers:
 hasPerformedInTaiwan: false
 taiwanVisitDetail: "Soprano Sondra Radvanovsky and conductor Enrique Mazzola have no documented performances in Taiwan. Radvanovsky's career spans well over a thousand performances, with no Taiwan dates found."
 relatedAlbums:
+  - title: "Manu Sinistra: Left-Hand Piano Concertos"
+    artist: "Illia Ovcharenko / Oksana Lyniv"
+    slug: "pentatone-5187498"
   - title: "Pappano: La Bohème (Puccini, with Alagna/Vaduva)"
     artist: "Antonio Pappano / Philharmonia Orchestra"
     slug: "emi-5865059"

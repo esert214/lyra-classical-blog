@@ -33,6 +33,9 @@ upcomingConcerts:
     location: "America"
     event: "Hadestown stage-adaptation film release"
 relatedAlbums:
+  - title: "The Outsiders (Original Broadway Cast Recording)"
+    artist: "Original Broadway Cast of The Outsiders"
+    slug: "sony-196871985772"
   - title: "Hamilton: An American Musical (Original Broadway Cast Recording)"
     artist: "Lin-Manuel Miranda and the Original Broadway Cast"
     slug: "atlantic-551093"
