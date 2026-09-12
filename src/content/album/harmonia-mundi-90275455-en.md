@@ -23,6 +23,9 @@ composers:
 hasPerformedInTaiwan: false
 taiwanVisitDetail: "Conductor Raphaël Pichon and the Pygmalion ensemble have no documented performances in Taiwan, primarily active on European tours."
 relatedAlbums:
+  - title: "Handel's Italians: The Castrati Behind the London Oratorios (same label, period style)"
+    artist: "Carlo Vistoli / Emmanuelle Haïm / Le Concert d'Astrée"
+    slug: "harmonia-mundi-902795"
   - title: "Pärt: Complete Symphonies"
     artist: "Iceland Symphony Orchestra / Eva Ollikainen"
     slug: "chandos-5372"

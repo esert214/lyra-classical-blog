@@ -23,6 +23,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "Conductor Kurt Masur visited Taiwan three times in his lifetime: in 1998 leading the New York Philharmonic's first visit to Taipei and Kaohsiung (the first international classical orchestra to perform in southern Taiwan), again in 2002 with the NY Philharmonic at Taipei's National Concert Hall, and in January 2010 with the Orchestre National de France to Tainan (1/23) and Taipei (1/24). The London Philharmonic's own Asian tours have been limited to China (Beijing's NCPA opening in 2008) without Taiwan stops."
 relatedAlbums:
+  - title: "Lise Davidsen's Verdi: The Norwegian Valkyrie Turns Italian"
+    artist: "Lise Davidsen / Edward Gardner / London Philharmonic Orchestra"
+    slug: "decca-4872241"
   - title: "Shostakovich: Lady Macbeth of Mtsensk"
     artist: "Kristine Opolais / Boston Symphony Orchestra / Andris Nelsons"
     slug: "dg-4867062"

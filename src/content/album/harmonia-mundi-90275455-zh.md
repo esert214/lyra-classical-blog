@@ -23,6 +23,9 @@ composers:
 hasPerformedInTaiwan: false
 taiwanVisitDetail: "指揮 Raphaël Pichon 與 Pygmalion 合奏團目前查無來台演出紀錄，主要活躍於歐洲巡演。"
 relatedAlbums:
+  - title: "韓德爾的義大利人：閹伶歌手與倫敦神劇（同廠古樂）"
+    artist: "Carlo Vistoli／Emmanuelle Haïm／Le Concert d'Astrée"
+    slug: "harmonia-mundi-902795"
   - title: "佩爾特《交響曲全集》"
     artist: "冰島交響樂團 / Eva Ollikainen"
     slug: "chandos-5372"

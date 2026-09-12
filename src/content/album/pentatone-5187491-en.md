@@ -26,6 +26,9 @@ composers:
 hasPerformedInTaiwan: false
 taiwanVisitDetail: "Soprano Sondra Radvanovsky and conductor Enrique Mazzola have no documented performances in Taiwan. Radvanovsky's career spans well over a thousand performances, with no Taiwan dates found."
 relatedAlbums:
+  - title: "Pappano and the LSO: The Planets and Tintagel — A New Era's First Blaze"
+    artist: "Sir Antonio Pappano / London Symphony Orchestra"
+    slug: "lsolive-0904"
   - title: "Manu Sinistra: Left-Hand Piano Concertos"
     artist: "Illia Ovcharenko / Oksana Lyniv"
     slug: "pentatone-5187498"

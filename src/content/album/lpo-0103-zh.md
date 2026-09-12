@@ -23,6 +23,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "指揮 Kurt Masur 生前三度來台：1998 年率紐約愛樂首訪台北與高雄（首位帶領國際古典天團造訪南台灣的指揮）、2002 年再度率紐愛登台北國家音樂廳、2010 年 1 月率法國國家交響樂團赴台南（1/23）與台北（1/24）。倫敦愛樂本身的亞洲巡演僅至中國（2008 北京國家大劇院開幕），未含台灣。"
 relatedAlbums:
+  - title: "麗絲·戴維森《Verdi》：挪威女武神的義大利轉身"
+    artist: "Lise Davidsen／Edward Gardner／倫敦愛樂管弦樂團"
+    slug: "decca-4872241"
   - title: "蕭士塔高維奇《穆森斯克郡的馬克白夫人》"
     artist: "Kristine Opolais / 波士頓交響樂團 / Andris Nelsons"
     slug: "dg-4867062"

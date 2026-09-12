@@ -33,6 +33,9 @@ upcomingConcerts:
     location: "America"
     event: "Hadestown stage-adaptation film release"
 relatedAlbums:
+  - title: "The Lost Boys (Original Broadway Cast): Bourzgui from Orpheus to Vampire"
+    artist: "The Lost Boys Original Broadway Cast (Shoshana Bean / Ali Louis Bourzgui)"
+    slug: "atlantic-075679574145"
   - title: "The Outsiders (Original Broadway Cast Recording)"
     artist: "Original Broadway Cast of The Outsiders"
     slug: "sony-196871985772"

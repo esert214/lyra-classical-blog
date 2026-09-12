@@ -33,6 +33,9 @@ upcomingConcerts:
     location: "美國巡演"
     event: "Leslie Odom Jr. 聖誕巡演（2026 年 11–12 月）"
 relatedAlbums:
+  - title: "《The Lost Boys》百老匯原聲帶：吸血鬼小鎮的搖滾悲歌"
+    artist: "The Lost Boys 百老匯原卡司（Shoshana Bean／Ali Louis Bourzgui）"
+    slug: "atlantic-075679574145"
   - title: "《Hadestown》百老匯原卡司原聲帶"
     artist: "Hadestown 百老匯原卡司（Anaïs Mitchell）"
     slug: "singitagain-7323880328"

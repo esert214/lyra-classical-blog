@@ -26,6 +26,9 @@ composers:
 hasPerformedInTaiwan: false
 taiwanVisitDetail: "女高音 Sondra Radvanovsky 與指揮 Enrique Mazzola 目前查無來台演出紀錄。Radvanovsky 演出足跡逾千場，未見台灣場次。"
 relatedAlbums:
+  - title: "帕帕諾與 LSO《行星＋提塔潔》：新官上任的第一把火"
+    artist: "Sir Antonio Pappano／London Symphony Orchestra"
+    slug: "lsolive-0904"
   - title: "《Manu Sinistra》左手鋼琴協奏曲集"
     artist: "Illia Ovcharenko / Oksana Lyniv"
     slug: "pentatone-5187498"

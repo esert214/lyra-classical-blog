@@ -33,6 +33,9 @@ upcomingConcerts:
     location: "US tour"
     event: "Leslie Odom Jr. Christmas tour (November–December 2026)"
 relatedAlbums:
+  - title: "The Lost Boys (Original Broadway Cast): A Rock Elegy from Vampire Town"
+    artist: "The Lost Boys Original Broadway Cast (Shoshana Bean / Ali Louis Bourzgui)"
+    slug: "atlantic-075679574145"
   - title: "Hadestown (Original Broadway Cast Recording)"
     artist: "Hadestown Original Broadway Cast (Anaïs Mitchell)"
     slug: "singitagain-7323880328"
