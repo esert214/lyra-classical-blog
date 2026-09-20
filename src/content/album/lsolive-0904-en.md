@@ -38,6 +38,9 @@ relatedAlbums:
   - title: "Pappano's La Bohème: A Paris Rooftop in 2006"
     artist: "Roberto Alagna / Angela Gheorghiu"
     slug: "emi-5865059"
+  - title: "Carl Orff: Carmina Burana"
+    artist: "Richard Hickox / London Symphony Orchestra"
+    slug: "lsolive-0025"
 tags: ["Antonio Pappano", "LSO", "Holst", "The Planets", "Bax", "Symphony", "LSO Live"]
 ---
 ## A New Regime Burns the Whole Solar System First

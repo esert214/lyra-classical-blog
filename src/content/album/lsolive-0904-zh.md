@@ -38,6 +38,9 @@ relatedAlbums:
   - title: "帕帕諾《波希米亞人》：2006 年的巴黎屋頂"
     artist: "Roberto Alagna / Angela Gheorghiu"
     slug: "emi-5865059"
+  - title: "希考克斯指揮奧夫《布蘭詩歌》"
+    artist: "Richard Hickox / London Symphony Orchestra"
+    slug: "lsolive-0025"
 tags: ["Antonio Pappano（帕帕諾）", "LSO（倫敦交響樂團）", "Holst（霍爾斯特）", "The Planets（行星組曲）", "Bax（巴克斯）", "Symphony（交響曲）", "LSO Live"]
 ---
 ## 新官上任，先燒整個太陽系
