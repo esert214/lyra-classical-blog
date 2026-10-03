@@ -30,6 +30,9 @@ upcomingConcerts:
     location: "Worldwide"
     event: "Worldwide release of Rubicon RCD1224 (this article is a pre-release preview)"
 relatedAlbums:
+  - title: "Vilde Frang Plays Elgar's Violin Concerto"
+    artist: "Vilde Frang / Robin Ticciati / DSO Berlin"
+    slug: "warner-2173240942"
   - title: "Schoenberg: Violin Concerto / Verklärte Nacht / Die Jakobsleiter"
     artist: "Patricia Kopatchinskaja / Berliner Philharmoniker / Kirill Petrenko"
     slug: "bph-250511"

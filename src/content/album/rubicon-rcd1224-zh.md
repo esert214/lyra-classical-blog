@@ -30,6 +30,9 @@ upcomingConcerts:
     location: "Worldwide"
     event: "專輯 Rubicon RCD1224 全球發行（本篇文章為發行前瞻）"
 relatedAlbums:
+  - title: "薇兒德·弗朗演奏艾爾加小提琴協奏曲"
+    artist: "Vilde Frang / Robin Ticciati / DSO Berlin"
+    slug: "warner-2173240942"
   - title: "荀伯格《小提琴協奏曲＋昇華之夜＋雅各天梯》"
     artist: "Patricia Kopatchinskaja／柏林愛樂／Kirill Petrenko"
     slug: "bph-250511"
