@@ -35,6 +35,9 @@ composers:
 hasPerformedInTaiwan: false
 taiwanVisitDetail: "風靡全球的音樂劇《SIX》（六位前妻）全本巡演迄今尚未正式登陸台灣；2026 年 4 月台北曾舉行「百老匯金曲之夜」音樂會由外籍卡司演唱劇中名曲，引發台灣年輕音樂劇迷強烈迴響與對全本引進的熱切期盼。"
 relatedAlbums:
+  - title: "《歡迎來到施米加多！》百老匯原版卡司錄音"
+    artist: "Original Broadway Cast"
+    slug: "joymachine-820233829175"
   - title: "《Heated Rivalry: The Unauthorized Musical Parody》非官方音樂劇原聲帶"
     artist: "Original Off-Broadway Cast"
     slug: "centerstage-723277845210"

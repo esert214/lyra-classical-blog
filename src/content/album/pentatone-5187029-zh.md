@@ -26,6 +26,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "鋼琴家皮耶-洛朗·艾馬爾（Pierre-Laurent Aimard）曾多次訪台，包括 2025 年 10 月 12 日在台北國家音樂廳舉行獨奏會；指揮家埃薩-佩卡·沙隆年（Esa-Pekka Salonen）亦曾於 2007 年率領英國愛樂管弦樂團（Philharmonia Orchestra）來台演出。"
 relatedAlbums:
+  - title: "沙隆尼指揮薩利亞霍歌劇《阿德里安娜·瑪特》"
+    artist: "Esa-Pekka Salonen / San Francisco Symphony"
+    slug: "dg-4866085"
   - title: "庫爾塔格《Játékok 遊戲》選集"
     artist: "Pierre-Laurent Aimard"
     slug: "pentatone-5187030"

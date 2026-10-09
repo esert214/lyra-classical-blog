@@ -20,6 +20,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "Pianist Pierre-Laurent Aimard performed in recital at the Taipei National Concert Hall on October 12, 2025, celebrating Kurtág's upcoming centenary with selected pieces from Játékok."
 relatedAlbums:
+  - title: "Jean Rondeau: Louis Couperin The Complete Works"
+    artist: "Jean Rondeau"
+    slug: "erato-5021732752734"
   - title: "Bartók: Piano Concertos Nos. 1 & 3"
     artist: "Pierre-Laurent Aimard / Esa-Pekka Salonen"
     slug: "pentatone-5187029"

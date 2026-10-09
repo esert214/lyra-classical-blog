@@ -35,6 +35,9 @@ composers:
 hasPerformedInTaiwan: false
 taiwanVisitDetail: "The full touring production of the global sensation SIX: The Musical has not yet officially visited Taiwan, though selections performed at Broadway concert showcases in Taipei in April 2026 ignited passionate enthusiasm among local musical theater audiences."
 relatedAlbums:
+  - title: "Schmigadoon! Original Broadway Cast Recording"
+    artist: "Original Broadway Cast"
+    slug: "joymachine-820233829175"
   - title: "Heated Rivalry: The Unauthorized Musical Parody (Original Off-Broadway Cast)"
     artist: "Original Off-Broadway Cast"
     slug: "centerstage-723277845210"

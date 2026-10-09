@@ -20,6 +20,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "鋼琴家皮耶-洛朗·艾馬爾（Pierre-Laurent Aimard）曾於 2025 年 10 月 12 日在台北國家音樂廳舉行獨奏會，向即將迎來百歲壽辰的庫爾塔格致敬，並演出《Játékok》精選曲目，為台灣樂壇近年最受矚目的當代鋼琴盛會。"
 relatedAlbums:
+  - title: "尚·隆鐸《路易·庫普蘭全集》"
+    artist: "Jean Rondeau"
+    slug: "erato-5021732752734"
   - title: "巴爾托克：第一與第三號鋼琴協奏曲"
     artist: "Pierre-Laurent Aimard / Esa-Pekka Salonen"
     slug: "pentatone-5187029"

@@ -26,6 +26,9 @@ composers:
 hasPerformedInTaiwan: true
 taiwanVisitDetail: "Pianist Pierre-Laurent Aimard has performed in Taiwan multiple times, most recently on October 12, 2025, at the Taipei National Concert Hall. Conductor Esa-Pekka Salonen toured Taiwan in 2007 with the Philharmonia Orchestra."
 relatedAlbums:
+  - title: "Esa-Pekka Salonen Conducts Saariaho: Adriana Mater"
+    artist: "Esa-Pekka Salonen / San Francisco Symphony"
+    slug: "dg-4866085"
   - title: "Kurtág: Játékok (Games)"
     artist: "Pierre-Laurent Aimard"
     slug: "pentatone-5187030"
