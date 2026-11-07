@@ -9,7 +9,7 @@ album: '西貝流士：第三、五號交響曲與《波希奧拉的女兒》（
 releaseDate: '2023-01-20'
 genre: 管弦樂 / 北歐浪漫交響曲
 catalogNumber: Alpha Classics ALPHA990
-coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/95/92/ff/9592ffc9-8d7d-a193-2780-60fcf5f4260a/3760014199905.jpg/1000x1000bb.jpg
+coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b9/ed/9a/b9ed9a42-a3d5-4a81-eb27-37f1482afcaa/3760014196454.png/1000x1000bb.jpg"
 coverImageSource: Apple Music
 performers:
 - name: Santtu-Matias Rouvali（桑圖-馬蒂亞斯·魯瓦利）

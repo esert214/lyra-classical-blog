@@ -8,7 +8,7 @@ album: '貝多芬：第六至九號交響曲（Beethoven: Révolution - Symphoni
 releaseDate: '2021-12-10'
 genre: 管弦樂 / 古樂器貝多芬詮釋
 catalogNumber: Alia Vox AVSA9946
-coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/bf/ea/87/bfea8759-dd6c-dbfb-b788-bda3504ae45d/7619986399460.jpg/1000x1000bb.jpg
+coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d5/08/48/d5084872-a47b-1eed-fac4-8464fe3c0159/196626171405.jpg/1000x1000bb.jpg"
 coverImageSource: Apple Music
 performers:
 - name: Jordi Savall（喬迪·薩瓦爾）

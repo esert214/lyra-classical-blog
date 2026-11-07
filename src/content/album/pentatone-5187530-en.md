@@ -8,7 +8,7 @@ album: "Missy Mazzoli: The Listeners"
 releaseDate: "2026"
 genre: "Opera / Contemporary Opera"
 catalogNumber: "Pentatone PTC 5187 530"
-coverImage: "https://www.pentatonemusic.com/wp-content/uploads/2026/07/PTC5187530-Mazzolli-The-Listeners-packaging-600x600.jpg"
+coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/aa/a9/0daaa9d1-0dd7-f778-7a41-daf167e0520d/8720929575305_cover.jpg/1000x1000bb.jpg"
 coverImageSource: "Pentatone"
 performers:
   - name: "Nicole Heaston"

@@ -8,7 +8,7 @@ album: '蕭邦：夜曲全集（Chopin: Nocturnes）'
 releaseDate: '2021-04-30'
 genre: 古典鋼琴獨奏 / 浪漫派
 catalogNumber: Hyperion CDA68441
-coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/98/28/bf/9828bf73-61b6-d24e-b5c6-2ce2139616ec/034571284414.jpg/1000x1000bb.jpg
+coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/01/d6/91/01d6913b-14e4-655e-6cfd-f49a583ace8a/23UMGIM69085.rgb.jpg/1000x1000bb.jpg"
 coverImageSource: Apple Music
 performers:
 - name: Stephen Hough（史蒂芬·賀夫）

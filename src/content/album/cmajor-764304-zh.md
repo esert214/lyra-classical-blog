@@ -8,7 +8,7 @@ album: '楊納傑克：歌劇《卡佳·卡巴諾娃》（Janáček: Káťa Kaba
 releaseDate: '2023-11-17'
 genre: 歌劇 / 二十世紀捷克歌劇
 catalogNumber: C Major 764304
-coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4a/bc/40/4abc40fc-eeea-f2cb-8015-89f417531478/764304.jpg/1000x1000bb.jpg
+coverImage: "https://cdn.naxos.com/sharedfiles/images/cds/hires/809204.jpg"
 coverImageSource: Apple Music
 performers:
 - name: Jakub Hrůša（雅庫布·赫魯薩）

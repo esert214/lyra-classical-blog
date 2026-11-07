@@ -9,7 +9,7 @@ album: '普契尼：歌劇《蝴蝶夫人》（Puccini: Madama Butterfly）'
 releaseDate: '2024-09-06'
 genre: 歌劇 / 義大利寫實主義歌劇
 catalogNumber: Alpha Classics ALPHA980
-coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/91/97/57/9197576a-fb52-eb44-f254-8c8efd05fe7f/3760014199806.jpg/1000x1000bb.jpg
+coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c2/af/e3/c2afe390-a304-1733-a4b1-fffefd28deb2/3760014197963.png/1000x1000bb.jpg"
 coverImageSource: Apple Music
 performers:
 - name: Asmik Grigorian（阿斯米克·格里戈里安）

@@ -9,7 +9,7 @@ album: 日落大道 2024 西區與百老匯原聲帶（Sunset Boulevard - The 20
 releaseDate: '2024-10-25'
 genre: 音樂劇 / 現代前衛百老匯復排
 catalogNumber: The Other Songs / Polydor 6589214
-coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4a/bc/40/4abc40fc-eeea-f2cb-8015-89f417531478/6589214.jpg/1000x1000bb.jpg
+coverImage: "https://cdn-images.dzcdn.net/images/cover/ba35f559808edb664e1380bcbfea35ff/1000x1000-000000-80-0-0.jpg"
 coverImageSource: Apple Music
 performers:
 - name: Nicole Scherzinger（妮可·舒辛格）

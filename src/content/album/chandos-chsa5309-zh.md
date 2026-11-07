@@ -8,7 +8,7 @@ album: '拉赫曼尼諾夫：E小調第二號交響曲，Op. 27（Rachmaninoff: 
 releaseDate: '2022-10-28'
 genre: 管弦樂 / 俄羅斯浪漫交響
 catalogNumber: Chandos CHSA5309
-coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4a/1c/fb/4a1cfb36-749e-b9bb-20e4-54c25d8d0ca7/095115530920.jpg/1000x1000bb.jpg
+coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5c/fb/e7/5cfbe703-9060-4ff4-3d34-cb70d1eda868/5059864530937.png/1000x1000bb.jpg"
 coverImageSource: Apple Music
 performers:
 - name: John Wilson（約翰·威爾森）
