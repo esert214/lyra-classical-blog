@@ -9,7 +9,7 @@ album: 日落大道 2024 西區與百老匯原聲帶（Sunset Boulevard - The 20
 releaseDate: '2024-10-25'
 genre: 音樂劇 / 現代前衛百老匯復排
 catalogNumber: The Other Songs / Polydor 6589214
-coverImage: "https://cdn-images.dzcdn.net/images/cover/ba35f559808edb664e1380bcbfea35ff/1000x1000-000000-80-0-0.jpg"
+coverImage: https://cdn-images.dzcdn.net/images/cover/ba35f559808edb664e1380bcbfea35ff/1000x1000-000000-80-0-0.jpg
 coverImageSource: Apple Music
 performers:
 - name: Nicole Scherzinger（妮可·舒辛格）
@@ -36,6 +36,15 @@ relatedAlbums:
 - title: 《Schmigadoon!》百老匯原卡司錄音
   artist: Alex Brightman / Sara Chase
   slug: joymachine-820233829175
+- title: 'SIX: The Musical'
+  artist: Toby Marlow / Lucy Moss / Original Cast of SIX
+  slug: republic-3851590
+- title: Wicked
+  artist: Stephen Schwartz / Idina Menzel / Kristin Chenoweth
+  slug: decca-b0001698
+- title: 'Sweeney Todd: The Demon Barber of Fleet Street'
+  artist: Josh Groban / Annaleigh Ashford / Stephen Sondheim / 2023 Broadway Cast
+  slug: warner-093624855421
 tags:
 - Sunset Boulevard（日落大道）
 - Andrew Lloyd Webber（安德魯·洛伊·韋伯）
@@ -44,6 +53,9 @@ tags:
 - Olivier Award Winner
 - Broadway Musical
 ---
+
+
+
 ## Stripping Away Hollywood Antique Chandelier Clutter
 
 Who could have predicted that Andrew Lloyd Webber’s opulent 1993 classic—once synonymous with gilded staircases and rococo excess—would be stripped down to black-and-white psychological brutality?

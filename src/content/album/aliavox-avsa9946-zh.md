@@ -8,7 +8,7 @@ album: '貝多芬：第六至九號交響曲（Beethoven: Révolution - Symphoni
 releaseDate: '2021-12-10'
 genre: 管弦樂 / 古樂器貝多芬詮釋
 catalogNumber: Alia Vox AVSA9946
-coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d5/08/48/d5084872-a47b-1eed-fac4-8464fe3c0159/196626171405.jpg/1000x1000bb.jpg"
+coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d5/08/48/d5084872-a47b-1eed-fac4-8464fe3c0159/196626171405.jpg/1000x1000bb.jpg
 coverImageSource: Apple Music
 performers:
 - name: Jordi Savall（喬迪·薩瓦爾）
@@ -33,6 +33,12 @@ relatedAlbums:
 - title: 尚·隆鐸《路易·庫普蘭全集》
   artist: Jean Rondeau
   slug: erato-5021732752734
+- title: 神聖靈魂：巴洛克聖樂罕見詠嘆調
+  artist: Jakub Józef Orliński（雅庫布·約瑟夫·奧爾林斯基）/ Maxim Emelyanychev（馬克西姆·埃梅利亞尼切夫）
+  slug: erato-0190295633745
+- title: 不是初次羊群牛仔競技
+  artist: Yo-Yo Ma（馬友友）/ Stuart Duncan / Edgar Meyer / Chris Thile
+  slug: sony-19439744832
 tags:
 - Ludwig van Beethoven（貝多芬）
 - Jordi Savall（薩瓦爾）
@@ -41,6 +47,8 @@ tags:
 - Period Instruments（古樂器）
 - Alia Vox
 ---
+
+
 ## 撕下神壇標籤，找回革命者的呼吸
 
 我們聽過太多龐大、厚重、宛如花崗岩紀念碑般的現代樂團版貝多芬交響曲。然而，加泰隆尼亞古樂泰斗喬迪·薩瓦爾（Jordi Savall）在八十歲高齡完成的這套《貝多芬革命：第六至九號交響曲》（*Beethoven Révolution*），卻徹底顛覆了所有人的聽覺記憶。

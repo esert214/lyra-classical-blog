@@ -9,7 +9,7 @@ album: '蕭邦：夜曲全集（Chopin: Nocturnes）'
 releaseDate: '2021-04-30'
 genre: 古典鋼琴獨奏 / 浪漫派
 catalogNumber: Hyperion CDA68441
-coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/01/d6/91/01d6913b-14e4-655e-6cfd-f49a583ace8a/23UMGIM69085.rgb.jpg/1000x1000bb.jpg"
+coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/01/d6/91/01d6913b-14e4-655e-6cfd-f49a583ace8a/23UMGIM69085.rgb.jpg/1000x1000bb.jpg
 coverImageSource: Apple Music
 performers:
 - name: Stephen Hough（史蒂芬·賀夫）
@@ -31,6 +31,15 @@ relatedAlbums:
 - title: 尚·隆鐸《路易·庫普蘭全集》
   artist: Jean Rondeau
   slug: erato-5021732752734
+- title: 'Brahms: Piano Works'
+  artist: Alexandre Kantorow
+  slug: bis-2460
+- title: 'My American Story: North'
+  artist: Daniil Trifonov / Yannick Nézet-Séguin / The Philadelphia Orchestra
+  slug: dg-4865518
+- title: 'The Handel Project: Handel Suites & Brahms Variations'
+  artist: Seong-Jin Cho
+  slug: dg-4863045
 tags:
 - Stephen Hough（賀夫）
 - Frédéric Chopin（蕭邦）
@@ -39,6 +48,9 @@ tags:
 - Romanticism（浪漫主義）
 - Hyperion Records
 ---
+
+
+
 ## The Last Candle Burning Before Dawn
 
 A nocturne has never been mere lullaby music. In Chopin's hands, the nocturne is a mirror reflecting the soul's most vulnerable tremors when all daylight defenses are stripped away.

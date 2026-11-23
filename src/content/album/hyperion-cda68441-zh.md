@@ -8,7 +8,7 @@ album: '蕭邦：夜曲全集（Chopin: Nocturnes）'
 releaseDate: '2021-04-30'
 genre: 古典鋼琴獨奏 / 浪漫派
 catalogNumber: Hyperion CDA68441
-coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/01/d6/91/01d6913b-14e4-655e-6cfd-f49a583ace8a/23UMGIM69085.rgb.jpg/1000x1000bb.jpg"
+coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/01/d6/91/01d6913b-14e4-655e-6cfd-f49a583ace8a/23UMGIM69085.rgb.jpg/1000x1000bb.jpg
 coverImageSource: Apple Music
 performers:
 - name: Stephen Hough（史蒂芬·賀夫）
@@ -30,6 +30,15 @@ relatedAlbums:
 - title: 尚·隆鐸《路易·庫普蘭全集》
   artist: Jean Rondeau
   slug: erato-5021732752734
+- title: 布拉姆斯：第二號鋼琴奏鳴曲、四首敘事曲、狂想曲
+  artist: Alexandre Kantorow（亞歷山大·康特洛）
+  slug: bis-2460
+- title: 我的美國故事：北方
+  artist: Daniil Trifonov（丹尼爾·特里福諾夫）/ Yannick Nézet-Séguin（雅尼克·涅澤-賽甘）
+  slug: dg-4865518
+- title: 韓德爾計畫：韓德爾組曲與布拉姆斯韓德爾變奏曲
+  artist: Seong-Jin Cho（趙成珍）
+  slug: dg-4863045
 tags:
 - Stephen Hough（賀夫）
 - Frédéric Chopin（蕭邦）
@@ -38,6 +47,9 @@ tags:
 - Romanticism（浪漫主義）
 - Hyperion Records
 ---
+
+
+
 ## 黎明前最後一盞未熄滅的燭光
 
 夜曲從來不是催眠的曲調。在蕭邦筆下，夜曲是一面鏡子，映照出一個人在深夜卸下所有防備後，靈魂深處最赤裸的顫動。

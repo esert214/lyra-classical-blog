@@ -9,7 +9,7 @@ album: '西貝流士：第三、五號交響曲與《波希奧拉的女兒》（
 releaseDate: '2023-01-20'
 genre: 管弦樂 / 北歐浪漫交響曲
 catalogNumber: Alpha Classics ALPHA990
-coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b9/ed/9a/b9ed9a42-a3d5-4a81-eb27-37f1482afcaa/3760014196454.png/1000x1000bb.jpg"
+coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b9/ed/9a/b9ed9a42-a3d5-4a81-eb27-37f1482afcaa/3760014196454.png/1000x1000bb.jpg
 coverImageSource: Apple Music
 performers:
 - name: Santtu-Matias Rouvali（桑圖-馬蒂亞斯·魯瓦利）
@@ -35,6 +35,12 @@ relatedAlbums:
 - title: 約翰·威爾森指揮拉赫曼尼諾夫第二交響曲
   artist: John Wilson / Sinfonia of London
   slug: chandos-chsa5309
+- title: 'Florence Price: Symphonies Nos. 1 & 3'
+  artist: Yannick Nézet-Séguin / The Philadelphia Orchestra
+  slug: dg-4861525
+- title: 'Weinberg: Symphonies Nos. 2 & 21 ''Kaddish'''
+  artist: Mirga Gražinytė-Tyla / Gidon Kremer / City of Birmingham Symphony Orchestra
+  slug: dg-4836933
 tags:
 - Jean Sibelius（西貝流士）
 - Santtu-Matias Rouvali（魯瓦利）
@@ -42,6 +48,8 @@ tags:
 - Sibelius Symphony No. 5（西貝流士第五號）
 - Alpha Classics
 ---
+
+
 ## Sixteen Swans Soaring into the Aurora
 
 On April 21, 1915, Jean Sibelius recorded in his diary: "Today at ten to eleven, I saw sixteen swans. God, what beauty! They circled over me for a long time. Disappeared into the solar haze like a gleaming, silver ribbon... That theme for horn and trombone..."

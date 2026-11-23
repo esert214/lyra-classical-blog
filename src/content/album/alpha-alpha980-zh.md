@@ -8,7 +8,7 @@ album: '普契尼：歌劇《蝴蝶夫人》（Puccini: Madama Butterfly）'
 releaseDate: '2024-09-06'
 genre: 歌劇 / 義大利寫實主義歌劇
 catalogNumber: Alpha Classics ALPHA980
-coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c2/af/e3/c2afe390-a304-1733-a4b1-fffefd28deb2/3760014197963.png/1000x1000bb.jpg"
+coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c2/af/e3/c2afe390-a304-1733-a4b1-fffefd28deb2/3760014197963.png/1000x1000bb.jpg
 coverImageSource: Apple Music
 performers:
 - name: Asmik Grigorian（阿斯米克·格里戈里安）
@@ -41,6 +41,15 @@ relatedAlbums:
 - title: 帕帕諾指揮威爾第《唐·卡洛》
   artist: Antonio Pappano / Jonas Kaufmann
   slug: sony-19439871522
+- title: 非凡靈魂：寫實歌劇女伶史托奇奧的榮耀詠嘆調
+  artist: Ermonela Jaho（埃爾莫內拉·雅霍）/ Andrea Battistoni（安德烈·巴蒂斯托尼）
+  slug: operarara-orr253
+- title: 來自挪威的聖誕
+  artist: Lise Davidsen（麗絲·達維森）/ Christian Eggen（克里斯蒂安·埃根）
+  slug: decca-4854654
+- title: 今夜無人入睡：普契尼專輯
+  artist: Jonas Kaufmann（約納斯·考夫曼）/ Antonio Pappano（安東尼奧·帕帕諾）
+  slug: sony-88875092492
 tags:
 - Giacomo Puccini（普契尼）
 - Madama Butterfly（蝴蝶夫人）
@@ -49,6 +58,9 @@ tags:
 - Alpha Classics
 - Verismo Opera（寫實主義歌劇）
 ---
+
+
+
 ## 撕去東方主義的虛偽面紗
 
 長久以來，《蝴蝶夫人》（*Madama Butterfly*）往往被塑造成一個穿著和服、柔弱順從的東洋藝伎被西方負心漢拋棄的俗套悲劇。

@@ -8,7 +8,7 @@ album: '貝多芬：第六至九號交響曲（Beethoven: Révolution - Symphoni
 releaseDate: '2021-12-10'
 genre: 管弦樂 / 古樂器貝多芬詮釋
 catalogNumber: Alia Vox AVSA9946
-coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d5/08/48/d5084872-a47b-1eed-fac4-8464fe3c0159/196626171405.jpg/1000x1000bb.jpg"
+coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d5/08/48/d5084872-a47b-1eed-fac4-8464fe3c0159/196626171405.jpg/1000x1000bb.jpg
 coverImageSource: Apple Music
 performers:
 - name: Jordi Savall（喬迪·薩瓦爾）
@@ -33,6 +33,12 @@ relatedAlbums:
 - title: 尚·隆鐸《路易·庫普蘭全集》
   artist: Jean Rondeau
   slug: erato-5021732752734
+- title: 'Anima Sacra: Sacred Baroque Arias'
+  artist: Jakub Józef Orliński / Maxim Emelyanychev / Il Pomo d'Oro
+  slug: erato-0190295633745
+- title: Not Our First Goat Rodeo
+  artist: Yo-Yo Ma / Stuart Duncan / Edgar Meyer / Chris Thile / Aoife O'Donovan
+  slug: sony-19439744832
 tags:
 - Ludwig van Beethoven（貝多芬）
 - Jordi Savall（薩瓦爾）
@@ -41,6 +47,8 @@ tags:
 - Period Instruments（古樂器）
 - Alia Vox
 ---
+
+
 ## Stripping Two Centuries of Dust from the Revolutionary
 
 We have grown accustomed to Beethoven symphonies rendered as monumental, granite colossi by modern massed symphony orchestras. Yet at age eighty, Catalan early music patriarch Jordi Savall dismantled all accrued varnish with his project *Beethoven Révolution*.

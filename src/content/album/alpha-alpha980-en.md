@@ -9,7 +9,7 @@ album: '普契尼：歌劇《蝴蝶夫人》（Puccini: Madama Butterfly）'
 releaseDate: '2024-09-06'
 genre: 歌劇 / 義大利寫實主義歌劇
 catalogNumber: Alpha Classics ALPHA980
-coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c2/af/e3/c2afe390-a304-1733-a4b1-fffefd28deb2/3760014197963.png/1000x1000bb.jpg"
+coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c2/af/e3/c2afe390-a304-1733-a4b1-fffefd28deb2/3760014197963.png/1000x1000bb.jpg
 coverImageSource: Apple Music
 performers:
 - name: Asmik Grigorian（阿斯米克·格里戈里安）
@@ -42,6 +42,15 @@ relatedAlbums:
 - title: 帕帕諾指揮威爾第《唐·卡洛》
   artist: Antonio Pappano / Jonas Kaufmann
   slug: sony-19439871522
+- title: 'Anima Rara: Verismo Arias Celebrated by Rosina Storchio'
+  artist: Ermonela Jaho / Andrea Battistoni / Orquestra de la Comunitat Valenciana
+  slug: operarara-orr253
+- title: Christmas from Norway
+  artist: Lise Davidsen / Christian Eggen / Norwegian Radio Orchestra
+  slug: decca-4854654
+- title: 'Nessun Dorma: The Puccini Album'
+  artist: Jonas Kaufmann / Antonio Pappano / Santa Cecilia Orchestra
+  slug: sony-88875092492
 tags:
 - Giacomo Puccini（普契尼）
 - Madama Butterfly（蝴蝶夫人）
@@ -50,6 +59,9 @@ tags:
 - Alpha Classics
 - Verismo Opera（寫實主義歌劇）
 ---
+
+
+
 ## Stripping Away Orientalist Illusions
 
 For over a century, Cio-Cio-San has too often been reduced to a fragile, submissive porcelain doll crushed under the boot of imperialist betrayal.

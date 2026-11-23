@@ -9,7 +9,7 @@ album: '拉赫曼尼諾夫：E小調第二號交響曲，Op. 27（Rachmaninoff: 
 releaseDate: '2022-10-28'
 genre: 管弦樂 / 俄羅斯浪漫交響
 catalogNumber: Chandos CHSA5309
-coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5c/fb/e7/5cfbe703-9060-4ff4-3d34-cb70d1eda868/5059864530937.png/1000x1000bb.jpg"
+coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5c/fb/e7/5cfbe703-9060-4ff4-3d34-cb70d1eda868/5059864530937.png/1000x1000bb.jpg
 coverImageSource: Apple Music
 performers:
 - name: John Wilson（約翰·威爾森）
@@ -36,6 +36,12 @@ relatedAlbums:
 - title: 佩特連科指揮史特勞斯《阿爾卑斯交響曲》
   artist: Vasily Petrenko / Royal Philharmonic Orchestra
   slug: harmonia-mundi-905712
+- title: 'My American Story: North'
+  artist: Daniil Trifonov / Yannick Nézet-Séguin / The Philadelphia Orchestra
+  slug: dg-4865518
+- title: 'Florence Price: Symphonies Nos. 1 & 3'
+  artist: Yannick Nézet-Séguin / The Philadelphia Orchestra
+  slug: dg-4861525
 tags:
 - Sergei Rachmaninoff（拉赫曼尼諾夫）
 - John Wilson（約翰·威爾森）
@@ -44,6 +50,8 @@ tags:
 - Chandos Records
 - BBC Music Magazine Award
 ---
+
+
 ## An Unbroken Wave of Russian Romantic Splendor
 
 This is the recording that swept classical critical polls upon arrival, capturing the prestigious **BBC Music Magazine Award**.

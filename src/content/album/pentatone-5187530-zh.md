@@ -1,42 +1,59 @@
 ---
-title: "梅佐莉《The Listeners》世界首演錄音"
-locale: "zh"
-slug: "pentatone-5187530"
+title: 梅佐莉《The Listeners》世界首演錄音
+locale: zh
+slug: pentatone-5187530
 date: 2026-07-23
-artist: "Missy Mazzoli（梅西·梅佐莉）／Nicole Heaston（妮可·希斯頓）"
-album: "Missy Mazzoli：The Listeners"
-releaseDate: "2026"
-genre: "歌劇 / 現代歌劇"
-catalogNumber: "Pentatone PTC 5187 530"
-coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/aa/a9/0daaa9d1-0dd7-f778-7a41-daf167e0520d/8720929575305_cover.jpg/1000x1000bb.jpg"
-coverImageSource: "Pentatone"
+artist: Missy Mazzoli（梅西·梅佐莉）／Nicole Heaston（妮可·希斯頓）
+album: Missy Mazzoli：The Listeners
+releaseDate: '2026'
+genre: 歌劇 / 現代歌劇
+catalogNumber: Pentatone PTC 5187 530
+coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/aa/a9/0daaa9d1-0dd7-f778-7a41-daf167e0520d/8720929575305_cover.jpg/1000x1000bb.jpg
+coverImageSource: Pentatone
 performers:
-  - name: "Nicole Heaston（妮可·希斯頓）"
-    role: "Claire Devon（女主角）"
-    bio: "American soprano, born and raised in Chicago's Hyde Park, graduate of the Cincinnati Conservatory. Originated the role of Claire Devon in The Listeners (2022 Oslo, 2025 Chicago). / 美國女高音，The Listeners 女主角 Claire Devon 的世界首演者。"
-  - name: "Missy Mazzoli（梅西·梅佐莉）"
-    role: "Composer（作曲家）"
-    bio: "American composer (b. 1980). The first woman commissioned by the Metropolitan Opera (Lincoln in the Bardo). Operas include Breaking the Waves, Proving Up, and The Listeners, mostly with librettist Royce Vavrek. Three-time Grammy nominee. / 美國作曲家，首位獲大都會歌劇院委託的女性作曲家。"
-  - name: "芝加哥抒情歌劇院（Lyric Opera of Chicago）"
-    role: "Orchestra & Chorus（樂團與合唱團）"
-    bio: "A leading North American opera house founded in 1954. / 1954 年成立的北美一線歌劇院。"
-  - name: "Enrique Mazzola（安立奎·馬佐拉）"
-    role: "Conductor（指揮）"
-    bio: "Spanish-Italian conductor (b. 1968). Music director of the Lyric Opera of Chicago since 2021. / 西班牙裔義大利指揮，2021 年起任芝加哥抒情歌劇院音樂總監。"
+- name: Nicole Heaston（妮可·希斯頓）
+  role: Claire Devon（女主角）
+  bio: American soprano, born and raised in Chicago's Hyde Park, graduate of the Cincinnati
+    Conservatory. Originated the role of Claire Devon in The Listeners (2022 Oslo,
+    2025 Chicago). / 美國女高音，The Listeners 女主角 Claire Devon 的世界首演者。
+- name: Missy Mazzoli（梅西·梅佐莉）
+  role: Composer（作曲家）
+  bio: American composer (b. 1980). The first woman commissioned by the Metropolitan
+    Opera (Lincoln in the Bardo). Operas include Breaking the Waves, Proving Up, and
+    The Listeners, mostly with librettist Royce Vavrek. Three-time Grammy nominee.
+    / 美國作曲家，首位獲大都會歌劇院委託的女性作曲家。
+- name: 芝加哥抒情歌劇院（Lyric Opera of Chicago）
+  role: Orchestra & Chorus（樂團與合唱團）
+  bio: A leading North American opera house founded in 1954. / 1954 年成立的北美一線歌劇院。
+- name: Enrique Mazzola（安立奎·馬佐拉）
+  role: Conductor（指揮）
+  bio: Spanish-Italian conductor (b. 1968). Music director of the Lyric Opera of Chicago
+    since 2021. / 西班牙裔義大利指揮，2021 年起任芝加哥抒情歌劇院音樂總監。
 composers:
-  - name: "Missy Mazzoli（梅西·梅佐莉）"
-    bio: "American composer (b. 1980), a leading voice in contemporary American opera. Her operas address myth, faith, and the strange edges of human connection. / 美國作曲家，當代美國歌劇界的重要聲音。"
+- name: Missy Mazzoli（梅西·梅佐莉）
+  bio: American composer (b. 1980), a leading voice in contemporary American opera.
+    Her operas address myth, faith, and the strange edges of human connection. / 美國作曲家，當代美國歌劇界的重要聲音。
 hasPerformedInTaiwan: false
-taiwanVisitDetail: "作曲家 Missy Mazzoli 與女高音 Nicole Heaston 目前查無來台演出紀錄。此劇為挪威／美國委託製作，尚未在亞洲演出。"
+taiwanVisitDetail: 作曲家 Missy Mazzoli 與女高音 Nicole Heaston 目前查無來台演出紀錄。此劇為挪威／美國委託製作，尚未在亞洲演出。
 relatedAlbums:
-  - title: "Puccini: Heroines"
-    artist: "Sondra Radvanovsky / Lyric Opera of Chicago"
-    slug: "pentatone-5187491"
-  - title: "庫爾塔格《Játékok 遊戲》"
-    artist: "Pierre-Laurent Aimard"
-    slug: "pentatone-5187030"
-tags: ["Missy Mazzoli（梅佐莉）", "Opera（歌劇）", "Contemporary（當代）", "The Listeners", "Nicole Heaston（希斯頓）", "World Premiere（世界首演）"]
+- title: 'Puccini: Heroines'
+  artist: Sondra Radvanovsky / Lyric Opera of Chicago
+  slug: pentatone-5187491
+- title: 庫爾塔格《Játékok 遊戲》
+  artist: Pierre-Laurent Aimard
+  slug: pentatone-5187030
+- title: 布拉姆斯：第三與第四號交響曲
+  artist: Herbert Blomstedt（赫伯特·布隆斯泰特）/ Gewandhausorchester Leipzig（萊比錫布商大廈管弦樂團）
+  slug: pentatone-5187050
+tags:
+- Missy Mazzoli（梅佐莉）
+- Opera（歌劇）
+- Contemporary（當代）
+- The Listeners
+- Nicole Heaston（希斯頓）
+- World Premiere（世界首演）
 ---
+
 ## 你聽得見那個聲音嗎？
 
 「The Listeners」——聆聽者。這部歌劇講的，是一群開始聽見某種神秘低頻嗡鳴的人。

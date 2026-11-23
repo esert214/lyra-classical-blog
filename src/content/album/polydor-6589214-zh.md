@@ -8,7 +8,7 @@ album: 日落大道 2024 西區與百老匯原聲帶（Sunset Boulevard - The 20
 releaseDate: '2024-10-25'
 genre: 音樂劇 / 現代前衛百老匯復排
 catalogNumber: The Other Songs / Polydor 6589214
-coverImage: "https://cdn-images.dzcdn.net/images/cover/ba35f559808edb664e1380bcbfea35ff/1000x1000-000000-80-0-0.jpg"
+coverImage: https://cdn-images.dzcdn.net/images/cover/ba35f559808edb664e1380bcbfea35ff/1000x1000-000000-80-0-0.jpg
 coverImageSource: Apple Music
 performers:
 - name: Nicole Scherzinger（妮可·舒辛格）
@@ -35,6 +35,15 @@ relatedAlbums:
 - title: 《Schmigadoon!》百老匯原卡司錄音
   artist: Alex Brightman / Sara Chase
   slug: joymachine-820233829175
+- title: 《SIX 六位皇后》音樂劇原聲帶
+  artist: SIX 原始卡司（Original Cast of SIX）/ Toby Marlow / Lucy Moss
+  slug: republic-3851590
+- title: 《女巫前傳》百老匯原版卡司錄音
+  artist: Idina Menzel（伊迪娜·曼佐）/ Kristin Chenoweth（克莉絲汀·錢諾維斯）/ Stephen Schwartz（史蒂芬·許瓦茲）
+  slug: decca-b0001698
+- title: 《瘋狂理髮師：倫敦艦隊街的惡魔理髮師》2023 百老匯復排版原聲帶
+  artist: Josh Groban（喬許·葛洛班）/ Annaleigh Ashford（安娜莉·阿什福德）/ Stephen Sondheim（史蒂芬·桑德海姆）
+  slug: warner-093624855421
 tags:
 - Sunset Boulevard（日落大道）
 - Andrew Lloyd Webber（安德魯·洛伊·韋伯）
@@ -43,6 +52,9 @@ tags:
 - Olivier Award Winner
 - Broadway Musical
 ---
+
+
+
 ## 撕碎好萊塢古董布景的極黑狂暴
 
 誰能想到，安德魯·洛伊·韋伯（Andrew Lloyd Webber）三十年前那部充斥著鍍金大樓梯與華麗豪宅的《日落大道》（*Sunset Boulevard*），會在 2024 年被徹底扒光所有繁文縟節，變成一部極黑、前衛、令人窒息的當代心理驚悚片？

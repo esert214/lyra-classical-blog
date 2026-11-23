@@ -1,42 +1,60 @@
 ---
-title: "Mazzoli: The Listeners (World Premiere Recording)"
-locale: "en"
-slug: "pentatone-5187530"
+title: 'Mazzoli: The Listeners (World Premiere Recording)'
+locale: en
+slug: pentatone-5187530
 date: 2026-07-23
-artist: "Missy Mazzoli / Nicole Heaston"
-album: "Missy Mazzoli: The Listeners"
-releaseDate: "2026"
-genre: "Opera / Contemporary Opera"
-catalogNumber: "Pentatone PTC 5187 530"
-coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/aa/a9/0daaa9d1-0dd7-f778-7a41-daf167e0520d/8720929575305_cover.jpg/1000x1000bb.jpg"
-coverImageSource: "Pentatone"
+artist: Missy Mazzoli / Nicole Heaston
+album: 'Missy Mazzoli: The Listeners'
+releaseDate: '2026'
+genre: Opera / Contemporary Opera
+catalogNumber: Pentatone PTC 5187 530
+coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/aa/a9/0daaa9d1-0dd7-f778-7a41-daf167e0520d/8720929575305_cover.jpg/1000x1000bb.jpg
+coverImageSource: Pentatone
 performers:
-  - name: "Nicole Heaston"
-    role: "Claire Devon"
-    bio: "American soprano, born and raised in Chicago's Hyde Park, graduate of the Cincinnati Conservatory. Originated the role of Claire Devon in The Listeners (2022 Oslo, 2025 Chicago)."
-  - name: "Missy Mazzoli"
-    role: "Composer"
-    bio: "American composer (b. 1980). The first woman commissioned by the Metropolitan Opera (Lincoln in the Bardo). Operas include Breaking the Waves, Proving Up, and The Listeners, mostly with librettist Royce Vavrek. Three-time Grammy nominee."
-  - name: "Lyric Opera of Chicago"
-    role: "Orchestra & Chorus"
-    bio: "A leading North American opera house founded in 1954."
-  - name: "Enrique Mazzola"
-    role: "Conductor"
-    bio: "Spanish-Italian conductor (b. 1968). Music director of the Lyric Opera of Chicago since 2021."
+- name: Nicole Heaston
+  role: Claire Devon
+  bio: American soprano, born and raised in Chicago's Hyde Park, graduate of the Cincinnati
+    Conservatory. Originated the role of Claire Devon in The Listeners (2022 Oslo,
+    2025 Chicago).
+- name: Missy Mazzoli
+  role: Composer
+  bio: American composer (b. 1980). The first woman commissioned by the Metropolitan
+    Opera (Lincoln in the Bardo). Operas include Breaking the Waves, Proving Up, and
+    The Listeners, mostly with librettist Royce Vavrek. Three-time Grammy nominee.
+- name: Lyric Opera of Chicago
+  role: Orchestra & Chorus
+  bio: A leading North American opera house founded in 1954.
+- name: Enrique Mazzola
+  role: Conductor
+  bio: Spanish-Italian conductor (b. 1968). Music director of the Lyric Opera of Chicago
+    since 2021.
 composers:
-  - name: "Missy Mazzoli"
-    bio: "American composer (b. 1980), a leading voice in contemporary American opera. Her operas address myth, faith, and the strange edges of human connection."
+- name: Missy Mazzoli
+  bio: American composer (b. 1980), a leading voice in contemporary American opera.
+    Her operas address myth, faith, and the strange edges of human connection.
 hasPerformedInTaiwan: false
-taiwanVisitDetail: "Composer Missy Mazzoli and soprano Nicole Heaston have no documented performances in Taiwan. The opera is a Norwegian/American commission that has not yet been produced in Asia."
+taiwanVisitDetail: Composer Missy Mazzoli and soprano Nicole Heaston have no documented
+  performances in Taiwan. The opera is a Norwegian/American commission that has not
+  yet been produced in Asia.
 relatedAlbums:
-  - title: "Puccini: Heroines"
-    artist: "Sondra Radvanovsky / Lyric Opera of Chicago"
-    slug: "pentatone-5187491"
-  - title: "Kurtág: Játékok"
-    artist: "Pierre-Laurent Aimard"
-    slug: "pentatone-5187030"
-tags: ["Missy Mazzoli", "Opera", "Contemporary", "The Listeners", "Nicole Heaston", "World Premiere"]
+- title: 'Puccini: Heroines'
+  artist: Sondra Radvanovsky / Lyric Opera of Chicago
+  slug: pentatone-5187491
+- title: 'Kurtág: Játékok'
+  artist: Pierre-Laurent Aimard
+  slug: pentatone-5187030
+- title: 'Brahms: Symphonies Nos. 3 & 4'
+  artist: Herbert Blomstedt / Gewandhausorchester Leipzig
+  slug: pentatone-5187050
+tags:
+- Missy Mazzoli
+- Opera
+- Contemporary
+- The Listeners
+- Nicole Heaston
+- World Premiere
 ---
+
 ## Can You Hear the Sound?
 
 The Listeners. An opera about a group of people who begin to hear a mysterious low-frequency hum.

@@ -8,7 +8,7 @@ album: '西貝流士：第三、五號交響曲與《波希奧拉的女兒》（
 releaseDate: '2023-01-20'
 genre: 管弦樂 / 北歐浪漫交響曲
 catalogNumber: Alpha Classics ALPHA990
-coverImage: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b9/ed/9a/b9ed9a42-a3d5-4a81-eb27-37f1482afcaa/3760014196454.png/1000x1000bb.jpg"
+coverImage: https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/b9/ed/9a/b9ed9a42-a3d5-4a81-eb27-37f1482afcaa/3760014196454.png/1000x1000bb.jpg
 coverImageSource: Apple Music
 performers:
 - name: Santtu-Matias Rouvali（桑圖-馬蒂亞斯·魯瓦利）
@@ -34,6 +34,12 @@ relatedAlbums:
 - title: 約翰·威爾森指揮拉赫曼尼諾夫第二交響曲
   artist: John Wilson / Sinfonia of London
   slug: chandos-chsa5309
+- title: 佛羅倫斯·普萊斯：第一與第三號交響曲
+  artist: Yannick Nézet-Séguin（雅尼克·涅澤-賽甘）/ The Philadelphia Orchestra（費城管弦樂團）
+  slug: dg-4861525
+- title: 瓦因伯格：第二與第二十一號交響曲「卡丁」
+  artist: Mirga Gražinytė-Tyla（米爾嘉·格拉日尼特-提拉）/ Gidon Kremer（基頓·克萊曼）
+  slug: dg-4836933
 tags:
 - Jean Sibelius（西貝流士）
 - Santtu-Matias Rouvali（魯瓦利）
@@ -41,6 +47,8 @@ tags:
 - Sibelius Symphony No. 5（西貝流士第五號）
 - Alpha Classics
 ---
+
+
 ## 掠過森林上空的十六隻天鵝
 
 1915 年 4 月 21 日，西貝流士在他的日記裡寫下一段著名的文字：「今天十點十分，我看見十六隻天鵝飛過。天哪，那真是一生中最美妙的景象！那種長號與圓號的旋律……」

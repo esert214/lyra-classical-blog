@@ -8,7 +8,7 @@ album: '楊納傑克：歌劇《卡佳·卡巴諾娃》（Janáček: Káťa Kaba
 releaseDate: '2023-11-17'
 genre: 歌劇 / 二十世紀捷克歌劇
 catalogNumber: C Major 764304
-coverImage: "https://cdn.naxos.com/sharedfiles/images/cds/hires/809204.jpg"
+coverImage: https://cdn.naxos.com/sharedfiles/images/cds/hires/809204.jpg
 coverImageSource: Apple Music
 performers:
 - name: Jakub Hrůša（雅庫布·赫魯薩）
@@ -40,6 +40,9 @@ relatedAlbums:
 - title: 格里戈里安主演普契尼《蝴蝶夫人》
   artist: Asmik Grigorian / Jonathan Tetelman
   slug: alpha-alpha980
+- title: 波希米亞傳說：德弗札克小提琴協奏曲、楊納傑克、蘇克
+  artist: Augustin Hadelich（奧古斯汀·哈德利希）/ Jakub Hrůša（雅庫布·赫魯薩）
+  slug: warner-9029527451
 tags:
 - Leoš Janáček（楊納傑克）
 - Jakub Hrůša（赫魯薩）
@@ -49,6 +52,7 @@ tags:
 - Gramophone Opera Award
 - C Major Entertainment
 ---
+
 ## 薩爾斯堡音樂節的留聲機大獎加冕
 
 在二十世紀歌劇的殿堂中，捷克大師萊奧什·楊納傑克（Leoš Janáček）的《卡佳·卡巴諾娃》（*Káťa Kabanová*）是一顆被痛苦與純潔包裹的鑽石。
